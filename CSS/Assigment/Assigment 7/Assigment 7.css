@@ -63,6 +63,7 @@ header nav .right ul li button{
     background-repeat: no-repeat;
     height: 100vh;
     width: 98.9vw;
+    background-attachment: fixed;
 }
 
 .hero .info{
