@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+.main{
+    padding: 80px 0;
+    background-color: lightgray;
+}
+
+.main .title{
+    text-align: center;
+    padding: 0 0 70px;
+}
+
+.main .title h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    margin: 0 0 8px;
+    color: #2e3135;
+}
+
+.main .title p{
+    margin: 0 260px;
+    font-size: 16px;
+    color: #364D59;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main .testimonials{
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-around;
+    height: 370px;
+}
+
+.main .testimonials .testimonials-card1{
+    background-color: white;
+    display: flex;
+    width: 573px;
+    height: 245px;
+    margin: 0 20px 30px 0;
+    padding: 30px 30px 30px 60px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.main .testimonials .testimonials-card2{
+    background-color: white;
+    display: flex;
+    width: 573px;
+    height: 245px;
+    margin: 0 20px 30px 0;
+    padding: 30px 30px 30px 60px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.main .testimonials .testimonials-card1 img{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    left: -7.5%;
+    top: 10%;
+    border: 5px solid white;
+    border-radius: 14px;
+}
+
+.main .testimonials .testimonials-card2 img{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    left: -7.5%;
+    top: 10%;
+    border: 5px solid white;
+    border-radius: 14px;
+}
+
+.main .testimonials .testimonials-card1 h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.main .testimonials .testimonials-card2 h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.main .testimonials .testimonials-card1 p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #9999;
+}
+
+.main .testimonials .testimonials-card1 p i{
+    color: gold;
+    margin: 5px 7px;
+    font-size: 17px;
+}
+
+.main .testimonials .testimonials-card2 p i{
+    color: gold;
+    margin: 5px 7px;
+    font-size: 17px;
+}
+
+.main .testimonials .testimonials-card2 p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #9999;
+}
+
+.main .testimonials .testimonials-card1 .stars{
+    margin: 10px 0;
+    color: gold;
+}
+
+.main .testimonials .testimonials-card2 .stars{
+    margin: 10px 0;
+    color: gold;
+}
+
+.main .testimonials .testimonials-card1 .content .para{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #364D45;
+    margin: 15px 0;
+}
+
+.main .testimonials .testimonials-card2 .content .para{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #364D45;
+    margin: 15px 0;
+}

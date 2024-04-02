@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 a{
     text-decoration: none;
@@ -8,9 +9,114 @@ a{
 li{
     list-style: none;
 }
+
 .main, .main-2{
     height: 200px;
     width: 200px;
     border: 1px solid;
-    margin: 20px;
+    margin: 10px;
+}
+
+.main{
+    border: 15px solid;
+    padding: 40px;
+}
+
+.main-2{
+    border: 1115px solid;
+    padding: 40px;
+}
+
+.box-1{
+    border: 1px solid;
+    width: 400px;
+    height: 400px;
+    margin: 90px;
+    position: relative;
+}
+
+.box-2{
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    position: absolute;
+    border-radius: 50%;
+    right: -15%;
+    top: -15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-2 img{
+    width: 80px;
+    height: 80px;
+}
+
+.card1,.card2{
+    height: 50px;
+    width: 700px;
+    background-color: aquamarine;
+    position: absolute;
+    text-align: center;
+}
+
+.card3,.card4{
+    height: 600px;
+    width: 70px;
+    background-color: cadetblue;
+    position: absolute;
+}
+
+.card1{
+    right: 10%;
+    z-index: 2;
+}
+
+.card2{
+    top: 25%;
+}
+
+.card4{
+    right: 50%;
+    z-index: 3;
+}
+
+.card3{
+    z-index: -1;
+}
+
+nav{
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    padding: 0 50px;
+    background-color: chartreuse;
+    width: 100%;
+    position: fixed;
+    top: 10px;
+}
+
+ul{
+    margin: 15px;
+}
+
+li{
+    display: inline;
+    padding: 10px;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+}
+
+a{
+    color: black;
+    background-color: goldenrod;
+    margin: 5px 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
