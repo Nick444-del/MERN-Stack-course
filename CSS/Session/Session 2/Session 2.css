@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    background-color: bisque;
+    height: 100vh;
+    padding: 0 53px;
+}
+
+.main .img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main h1{
+    color: cyan;
+}
+
+.main img{
+    margin-top: 10px;
+    border-radius: 50%;
+}
+
+.box1{
+    width: 400px;
+    background-color: #5f9ea0;
+    margin: 36px 0;
+    padding: 20px;
+}
+
+.box2{
+    height: 100px;
+    border: 1px solid;
+    background-color: #ee7d4d;
+    padding: 20px;
+}

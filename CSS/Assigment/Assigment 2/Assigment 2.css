@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    background-color: bisque;
+    height: 100vh;
+}
+
+.head h1{
+    margin: 0 50% 0 50%;
+    padding-top: 3%;
+    color: green;
+}
+
+.head p{
+    padding: 10px 300px;
+    margin: 20px 205px;
+}
+
+.card{
+    background-color: blue;
+    margin: 40px 50px 10px 90px;
+    width: 350px;
+}
+
+.card h1{
+    padding: 30px 35px 17px 17px;
+    color: lightgreen;
+}
+
+.card p{
+    padding: 0 15px 15px 15px;
+    color: lightblue;
+}

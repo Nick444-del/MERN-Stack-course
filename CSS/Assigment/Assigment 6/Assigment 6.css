@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+.main-footer{
+    padding: 30px 60px;
+    background-color: whitesmoke;
+}
+
+.main-footer .footer-table{
+    display: table;
+}
+
+.main-footer .footer-table .footer-tab{
+    display: table-cell;
+    padding: 30px;
+}
+
+.main-footer .footer-table .footer-tab-1 h2{
+    font-size: 28px;
+    margin: 0 0 10px 0;
+    padding: 2px 0 2px 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1;
+    font-weight: 600;
+    color: #37517e;
+}
+
+.main-footer .footer-table .footer-tab-1 p{
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: 'Jost', sans-serif;
+    color: #5e5e5e;
+}
+
+
+.main-footer .footer-table .footer-tab-2 h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: #37517e;
+    position: relative;
+    padding-bottom: 12px;
+    font-family: 'Jost', sans-serif;
+}
+
+.main-footer .footer-table .footer-tab-2 ul li{
+    padding: 10px;
+    /* display: flex; */
+    font-family: 'Jost', sans-serif;
+    color: #5e5e5e;
+    align-items: center;
+}
+
+.main-footer .footer-table .footer-tab-2 ul li i{
+    padding-right: 4px;
+    color: #47b2e4;
+    font-size: 13px;
+    line-height: 1;
+}
+
+.main-footer .footer-table .footer-tab-3 h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: #37517e;
+    position: relative;
+    padding-bottom: 12px;
+    font-family: 'Jost', sans-serif;
+}
+
+.main-footer .footer-table .footer-tab-3 ul li{
+    padding: 10px;
+    /* display: flex; */
+    font-family: 'Jost', sans-serif;
+    color: #5e5e5e;
+    align-items: center;
+}
+
+.main-footer .footer-table .footer-tab-3 ul li i{
+    padding-right: 4px;
+    color: #47b2e4;
+    font-size: 13px;
+    line-height: 1;
+}
+
+.main-footer .footer-table .footer-tab-4 h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: #37517e;
+    position: relative;
+    padding-bottom: 12px;
+    font-family: 'Jost', sans-serif;
+}
+
+.main-footer .footer-table .footer-tab-4 p{
+    margin-bottom: 1rem;
+    font-family: 'Jost', sans-serif;
+}
+
+.main-footer .footer-table .footer-tab-4 .soc-ico{
+    display: flex;
+    margin-top: 1rem;
+    gap: 15px;
+}
+
+.main-footer .footer-table .footer-tab-4 .soc-ico .box{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: #209dd8;
+    border-radius: 50%;
+}
+
+.main-footer .footer-table .footer-tab-4 .soc-ico .box i{
+    margin-top: 7px;
+    color: white;
+}

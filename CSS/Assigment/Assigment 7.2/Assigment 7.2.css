@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+.main{
+    margin: 20px 99.6px;
+    padding: 0 12px;
+}
+
+.main .title{
+    padding: 0 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.main .title h4{
+    font-family: 'Roboto', sans-serif;
+    padding: 8px 20px;
+    background: #E7F1FD;
+    color: #106EEA;
+    height: 31.6px;
+    width: 107.59px;
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    justify-content: center;
+}
+
+.main .title h3{
+    font-family: 'Roboto', sans-serif;
+    margin: 15px 0 0;
+    font-size: 32px;
+}
+
+.main .title h3 span{
+    color: #106EEA;
+}
+
+.main .title p{
+    margin: 15px 342px 0;
+    font-family: 'Open Sans', sans-serif;
+    width: 648px;
+}
+
+.main .service-sec{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main .service-sec .service-card{
+    margin: 10px 12px;
+    width: 350px;
+    height: 300.4px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #F1F6FE;
+}
+
+.main .service-sec .service-card .icon-box{
+    display: block;
+    width: 64px;
+    height: 64px;
+    background-color: #F1F6FE;
+    border-radius: 5px;
+    transition: .2s ease-in-out;
+}
+
+.main .service-sec .service-card .icon-box i{
+    font-size: 32px;
+    display: block;
+    color: #106EEA;
+    margin-top: 15px;
+}
+
+
+
+.main .service-sec .service-card a{
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    transition: .2s ease-in-out;
+}
+
+.main .service-sec .service-card p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+
+}
+
+.main .service-sec .service-card:hover a{
+    color: #106EEA;
+}
+
+.main .service-sec .service-card:hover .icon-box{
+    border: 1px solid #106EEA;
+}

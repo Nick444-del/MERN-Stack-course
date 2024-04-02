@@ -1,0 +1,683 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/* Navigation bar start */
+
+header{
+    background-color: black;
+    padding: 20px 0;
+}
+
+header nav{
+    display: flex;
+    padding: 0 40px;
+}
+
+header nav .logo{
+    width: 20%;
+}
+
+header nav .right{
+    width: 80%;
+    text-align: right;
+    margin-top: 10px;
+}
+
+header nav ul li{
+    display: inline;
+    width: 100%;
+    padding: 15px;
+}
+
+header nav ul li a{
+    color: white;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+header nav .right ul li button{
+    padding: 5px 17px 2px;
+    font-family: 'Montserrat', sans-serif;
+    /* margin: 5px; */
+}
+
+/* Navigation bar End */
+
+/* Hero section start */
+
+.hero{
+    background: url(./img/blog2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 98.9vw;
+}
+
+.hero .info{
+    padding: 190px 90px;
+}
+
+.hero .info h1{
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin: 0 0 24px;
+    line-height: 70px !important;
+    font-weight: 700;
+    width: 470px;
+}
+
+.hero .info p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin: 0 0 24px;
+    width: 480px;
+    color: white;
+}
+
+.hero .info button{
+    padding: 5px 17px 2px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 5px;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    width: 171.6px;
+    height: 35.45;
+    padding: 8px 25px;
+    cursor: pointer;
+}
+
+.hero .info button i{
+    margin: 1px 0 0 7px;
+}
+
+.hero .info .read{
+    background-color: transparent !important;
+    border: 2px solid white;
+    color: white;
+}
+
+/* Hero section End */
+
+/* Section 2 start */
+
+.section-2{
+    padding: 110px 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 170px;
+}
+
+.section-2 .left .img-container img{
+    width: 571px;
+    height: 520px;
+}
+
+.section-2 .right{
+    width: 500px;
+    height: 500px;
+}
+
+.section-2 .right .info{
+    margin-top: 80px;
+}
+
+.section-2 .right .info h1{
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px 0;
+    font-size: 34px;
+    color: #282828;
+    font-weight: 400;
+}
+
+.section-2 .right .info h3{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 0 20px;
+    font-size: 18px;
+    font-weight: 100;
+    color: #707070;
+}
+
+.section-2 .right .info p{
+    margin: 0 0 22px;
+    font-family: 'Open Sans', sans-serif;
+    color: #707070;
+}
+
+.section-2 .right .info button{
+    padding: 5px 17px 2px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 5px;
+    background-color: white;
+    border: 2px solid aqua;
+    border-radius: 20px;
+    text-transform: uppercase;
+    width: 220px;
+    height: 35.45;
+    padding: 8px 25px;
+    color: aqua;
+}
+
+/* Section 2 End */
+
+/* Section 3 start */
+
+.section-3 .img-sec{
+    display: flex;
+    width: 98.9vw;
+}
+
+.section-3 .img-sec img{
+    width: 100%;
+    height: 420px;
+    margin: 0 00px;
+}
+
+/* Section 3 End */
+
+/* Section 4 start */
+
+.section-4{
+    padding: 110px 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 170px;
+}
+
+.section-4 .left .img-container img{
+    width: 580px;
+    height: 540px;
+}
+
+.section-4 .right .info h1{
+    margin: 20px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: #282828;
+}
+
+.section-4 .right .info h3{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 0 20px;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.section-4 .right .info p{
+    margin: 0 0 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #707070;
+}
+
+.section-4 .right .info button{
+    padding: 5px 17px 2px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 5px;
+    background-color: white;
+    border: 2px solid aqua;
+    border-radius: 20px;
+    text-transform: uppercase;
+    width: 220px;
+    height: 35.45;
+    padding: 8px 25px;
+    color: aqua;
+}
+
+/* Seaction 4 End */
+
+/* Section 5 start */
+
+.section-5{
+    display: flex;
+}
+
+.section-5 .left{
+    padding: 0 15px;
+    background-color: #46eff0;
+    height: 723px;
+    width: 50%;
+}
+
+.section-5 .left .container{
+    padding: 106px;
+}
+
+.section-5 .left .container .info-card{
+    margin-bottom: 10px;
+    text-align: left;
+    display: flex;
+}
+
+.section-5 .left .container .info-card .info-num{
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: 600;
+    padding: 5px 15px;
+}
+
+.section-5 .left .container .info-card .info-desc h1{
+    margin: 5px 12px 6px;
+    font-size: 35px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+.section-5 .left .container .info-card .info-desc p{
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-size: 18px;
+    margin: 5px 15px 22px;
+    width: 345px;
+    height: 96px;
+    font-weight: 200;
+}
+
+.section-5 .right img{
+    height: 723px;
+    width: 100%;
+}
+
+/* Section 5 End */
+
+/* Section 6 Start */
+
+.section-6{
+    padding: 110px 0;
+}
+
+.section-6 .title{
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-6 .title h1{
+    text-align: center;
+    font-weight: 300;
+    font-size: 38px !important;
+    font-family: 'Montserrat', sans-serif;
+    color: #282828;
+    margin: 0 0 23.19px;
+    text-transform: capitalize;
+}
+
+.section-6 .title p{
+    text-align: center;
+    margin: 0 232px 81.19px;
+    font-family: 'Open Sans', sans-serif;
+    color: #707070;
+    font-size: 22px;
+}
+
+.section-6 .item{
+    display: flex;
+    justify-content: center;
+}
+
+.section-6 .item .img-container{
+    width: 298px;
+    height: 474.69px;
+    padding: 0 15px;
+}
+
+.section-6 .item img{
+    width: 268px;
+    width: 100%;
+}
+
+.section-7 .image{
+    background-image: url(./img/section71.jpg);
+    width: 100%;
+    height: 563.34px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-7 .image .container{
+    margin: 0 97.363px;
+    padding: 0 15px;
+    width: 1190px;
+    height: 563.34px;
+}
+
+.section-7 .image .container .card{
+    height: 100%;
+    width: 638px;
+    background: #A78A73;
+    color: white;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+.section-7 .image .container .card .info{
+    padding: 92.7955px;
+}
+
+.section-7 .image .container .card .info h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    margin: 0 0 20.3523px;
+    width: 452.41px;
+    height: 150px;
+    font-weight: 500;
+}
+
+.section-7 .image .container .card .info h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    margin: 0 0 30px;
+    font-weight: 100;
+}
+
+.section-7 .image .container .card .info p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    margin: 0 0 22px;
+}
+
+.section-8{
+    padding: 60px 0;
+}
+
+.section-8 .img-container{
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-9{
+    background-image: url(./img/section91.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+}
+
+.section-9 .container {
+    padding: 0 150px;
+    width: 1190px;
+    height: 100%;
+}
+
+.section-9 .container .img-align{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100%;
+    margin-left: 1px;
+    padding: 0 15px;
+}
+
+.section-9 .container .img-align img{
+    /* width: 809px;
+    height: 254px; */
+}
+
+.section-10{
+    padding: 110px 0;
+}
+
+.section-10 .container{
+    padding: 0 15px;
+    margin: 0 150px;
+}
+
+.section-10 .container .profile-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section-10 .container .profile-container .profile{
+    display: flex;
+    padding: 0 15px;
+    margin: 0 0 65.44px;
+}
+
+.section-10 .container .profile-container .profile img{
+    border-radius: 50%;
+    padding: 0 15px;
+}
+
+.section-10 .container .profile-container .profile .right{
+    padding: 0 15px;
+}
+
+.section-10 .container .profile-container .profile .right p:nth-child(1){
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    margin: 25px 0 13.44px;
+    font-weight: 100;
+}
+
+.section-11{
+    background-color: #47DF84;
+    width: 100%;
+    height: 185px;
+}
+
+.section-11 .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-11 .container .title-container{
+    padding: 0 15px;
+    margin: 13.27px 0;
+}
+
+.section-11 .container .title-container h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.section-11 .container .title-container .t h1{
+    padding-top: 10px;
+}
+
+.section-12{
+    padding: 110px 0;
+}
+
+.section-12 .shop-container{
+    padding: 0 110px;
+    display: flex;
+}
+
+.section-12 .shop-container .shop-card{
+    padding: 0 15px;
+}
+
+.section-12 .shop-container .shop-card img{
+    width: 267.5px;
+    height: 267.5px;
+}
+
+.section-12 .shop-container .shop-card .info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.section-12 .shop-container .shop-card .info h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.section-12 .shop-container .shop-card .info p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 5.3px;
+}
+
+.section-12 .shop-container .shop-card .info .prise{
+    margin: 0 0 14.7px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.section-12 .shop-container .shop-card .info button{
+    font-family: 'Montserrat', sans-serif;
+    width: 128.97;
+    height: 36.91;
+    border: 2px solid;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 9px 25px;
+    background-color: white;
+    border-color: #46cbcd;
+    color: #46cbcd;
+}
+
+footer{
+    padding: 60px 0;
+    background-color: #707070;
+}
+
+footer .container{
+    padding: 0 200px;
+}
+
+footer .container .part-1{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .container .part-1 .group1{
+    padding: 0 15px;
+}
+
+footer .container .part-1 .group1 .logo img{
+    z-index: 3;
+    width: 163px;
+    height: 39px;
+    margin-bottom: 5px;
+}
+
+footer .container .part-1 .group1 p{
+    margin: 0 0 22px;
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+    width: 214px;
+}
+
+footer .container .part-1 .group1 .social{
+    margin: 17.386px 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+footer .container .part-1 .group2 h2{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 0 6.7272px;
+    color: #282828;
+    font-size: 14px;
+}
+
+footer .container .part-1 .group2 ul li{
+    margin: 15px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #848484;
+}
+
+footer .container .part-1 .group3 h2{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 0 6.7272px;
+    color: #282828;
+    font-size: 14px;
+}
+
+footer .container .part-1 .group3 ul li{
+    margin: 15px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #848484;
+}
+
+footer .container .part-1 .group4 h2{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 0 6.7272px;
+    color: #282828;
+    font-size: 14px;
+}
+
+footer .container .part-1 .group4 ul li{
+    margin: 15px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #848484;
+}
+
+footer .container .part-1 .group5 h2{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 0 10.693px;
+    color: #282828;
+    font-size: 14px;
+}
+
+footer .container .part-1 .group5 p{
+    margin: 10px 0;
+}
+
+footer .container .part-1 .group5 input{
+    padding: 8px 40px 9px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #848484;
+}
+
+footer .container .part-2{
+    border: none;
+    padding: 0 15px;
+}
+
+footer .container .part-2 .line-container{
+    width: 100%;
+    margin: 40.59px 0 0;
+    padding: 40.59px 0 0;
+    height: 1px;
+}
+
+footer .container .part-2 .line-container .line{
+    width: 100%;
+    height: 1px;
+    border: 1px solid;
+}
+
+footer .container .part-2 p{
+    margin-top: 50px;
+    text-align: center;
+    color: #282828;
+    font-family: 'Open Sans', sans-serif;
+}

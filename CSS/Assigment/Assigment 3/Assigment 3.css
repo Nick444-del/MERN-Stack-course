@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+.main{
+    /* background-color: blanchedalmond; */
+    height: 100%;
+    padding: 20px;
+    padding: 0 100px;
+    /* overflow: hidden; */
+}
+
+
+.card{
+    width: 220px;
+    height: 220px;
+    background-color: white;
+    margin: 20px 45px 20px 20px;
+    float: left;
+    padding: 20px;
+}
+
+.card h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    margin-top: 75px;
+    margin-bottom: 15px;
+}
+
+.card p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.empty{
+    clear: both;
+}
+
+.about{
+    overflow: hidden;
+    /* background-color: lightblue; */
+    padding: 60px 0;
+}
+
+.about .title{
+    text-align: center;
+}
+
+.about .title h1{
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about .title p{
+    margin: 10px;
+    padding: 30px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.about .about-desc img{
+    width: 45%;
+    float: left;
+    padding: 25px;
+}
+
+.about .about-desc .right{
+    width: 49%;
+    float: right;
+}
+
+.about .about-desc .right h1{
+    font-size: 23px;
+    margin: 42px 10px 20px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about .about-desc .right .below_heading{
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px 0px 16px;
+    font-size: 16px;
+}
+
+.about .about-desc .right li{
+    list-style: none;
+    margin: 35px 0;
+}
+
+.about .about-desc .right ul{
+    margin: 0 0 16px;
+}
+
+.about .about-desc .right li h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin: 0 0 8px;
+}
+
+.about .about-desc .right li p{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 15px;
+}
+
+.about .about-desc .right .last-para{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+.emp_cards{
+    overflow: hidden;
+}
+
+.team .title{
+    text-align: center;
+    padding: 0 0 30px;
+    margin: 15px 0 0;
+}
+
+.emp_card{
+    width: 250px;
+    background-color: white;
+    margin: 20px 45px 20px 20px;
+    float: left;
+}
+
+.emp_card img{
+    width: 250px;
+    height: 250px;
+}
+
+.emp_card .emp_desc{
+    padding: 25px 15px;
+}
+
+.emp_card .emp_desc .name{
+    font-family: 'Roboto', sans-serif;
+    margin: 0 0 5px;
+}
+
+.emp_card .emp_desc p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.emp_cards{
+    padding: 0 12px;
+}
+
+.team{
+    /* background-color: lightblue; */
+}
+
+.team .title h1{
+    margin: 15px 0 0;
+}
+
+.team .title p{
+    margin: 15px 234px 0;
+    font-family: 'Open Sans', sans-serif;
+}
