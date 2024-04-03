@@ -89,6 +89,38 @@ form input[type="submit"]:hover{
     color: aquamarine;
 } */
 
-.main ~ p{
+/* .main ~ p{
     color: tan;
+} */
+
+.img-main{
+    margin: 50px;
+}
+
+/* .img-main > .main-2{
+
+    background-image: url(./img/claudio-schwarz-UqF9Ei4Nqy0-unsplash.jpg);
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-main > .main-3{
+
+    background-image: url(./img/holly-booth-PcdNoN7xmyc-unsplash.jpg);
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-main > .main-2:hover + .main-3{
+    border-radius: 50%;
+} */
+
+.img-main .main-2:hover + .main-3 > img{
+    border-radius: 50%;
 }
