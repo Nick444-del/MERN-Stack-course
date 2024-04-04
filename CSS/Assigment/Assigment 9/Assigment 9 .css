@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(146, 255, 255);
+    position: relative;
+    z-index: 1;
+}
+
+.main .img1{
+    position: absolute;
+    left: 24%;
+    top: 20%;
+    z-index: 2;
+}
+
+.main .img2{
+    position: absolute;
+    right: 32%;
+    top: 49%;
+    z-index: -1;
+}
+
+form{
+    background-color: white;
+    width: 450px;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 25px;
+    position: relative;
+}
+
+.main form .form-pad{
+    width: 80%;
+    margin: 15px 0;
+    border-bottom: 1px solid lightsteelblue;
+}
+
+.main form .form-pad input{
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+form h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 8%;
+    text-transform: uppercase;
+}
+
+form .userName{
+    width: 90%;
+    margin: 15px 0;
+    position: absolute;
+
+    top: 20%;
+    left: 10%;
+}
+
+form .phoneNumber{
+    width: 90%;
+    margin: 15px 0;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+form .mail{
+    width: 90%;
+    margin: 15px 0;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+form .password{
+    width: 90%;
+    margin: 15px 0;
+    position: absolute;
+    top: 49%;
+    left: 10%;
+}
+
+form .confirmPassword{
+    width: 90%;
+    margin: 15px 0;
+    position: absolute;
+    top: 58%;
+    left: 10%;
+}
+
+form .register{
+    width: 90%;
+    margin: 15px 0;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+}
+
+form .register input{
+    width: 90%;
+    border: none;
+    font-size: 17px;
+    background-color: rgb(146, 255, 255);
+    color: white;
+    padding: 10px 0;
+}
+
+form .userName input, form .phoneNumber input, form .mail input, form .password input, form .confirmPassword input{
+    width: 90%;
+    font-size: 17px;
+    outline: transparent;
+    border: transparent;
+}
+
+form .userName i, form .phoneNumber i, form .mail i, form .password i, form .confirmPassword i{
+    color: lightsteelblue;
+    font-size: 20px;
+}
+
+::placeholder{
+    color: lightsteelblue;
+}
+
