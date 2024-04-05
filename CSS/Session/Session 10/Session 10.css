@@ -161,3 +161,10 @@ nav ul li:nth-child(1) a::before{
     background-position: center;
     background-repeat: no-repeat;
 }
+
+
+@media only screen and (max-width: 480px) {
+    .main-2{
+        background-color: red;
+    }
+}
