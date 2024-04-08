@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    /* Navigation bar start */
+    header{
+        padding: 0 0;
+        width: 100%;
+    }
+    nav{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0px;
+        margin-right: 120px;
+        position: relative;
+        width: 100%;
+    }
+
+    nav ul{
+        margin-right: 37px;
+    }
+
+    nav ul li{
+        margin: 10px 5px;
+        font-size: 15px;
+    }
+    nav .btn{
+        margin: 10px 0;
+        width: 122px;
+    }
+    /* Navigation bar end */
+    /* Main Section start */
+    /* Hero Section */
+
+    .main{
+        position: absolute;
+        width: 100%;
+    }
+
+    .main .hero{
+        width: 100%;
+        height: 100%;
+    }
+
+    .main .hero .container {
+        margin: 0 15px;
+    }
+
+    .main .hero .container .hero-inro h1{
+        font-size: 23px;
+        width: 100%;
+    }
+
+    .main .hero .container .hero-inro p{
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .main .hero .container .start-btn{
+        width: auto;
+    }
+
+    .main .hero .cards-container{
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 20px;
+    }
+    .main .hero .cards-container .card{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Hero Section ends */
+
+    /* About us part 1 Start */
+
+    .about-us{
+        width: auto;
+        padding: 20px 20px;
+        margin: 5px 10px;
+    }
+
+    .about-us .explain{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .about-us .explain .left-container, .about-us .explain .right-container{
+        width: 300px !important;
+    }
+
+    .about-us .explain .left-container .para{
+        width: 100%;
+    }
+
+    .about-us .explain .right-container ul{
+        width: 100%;
+    }
+
+    .about-us .explain .left-container ul li{
+        width: 100%;
+    }
+
+    .about-us .explain .right-container{
+        padding: 24px 12px 0;
+    }
+
+    .about-us .explain .right-container .para{
+        width: auto;
+    }
+
+    .about-us .explain .right-container a{
+        margin-top: 30px;
+    }
+    /* about us part 1 ends */
+
+    /* about us part 2 start */
+
+    .counts{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    /* about us part 2 ends */
+
+    /* About us part 3 start */
+
+    .explain{
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .explain .left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .explain .left .video{
+        width: 300px;
+        height: 220px;
+    }
+
+    .explain .right{
+        width: 100%;
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+    }
+
+    .explain .right h3{
+        width: 100%;
+        font-size: 24px;
+    }
+
+    .explain .right .first-p{
+        text-align: justify;
+    }
+
+    .explain .right .second-p{
+        text-align: justify;
+    }
+
+    /* About us part 3 ends */
+
+    /* About us part 4 Section start */
+
+    .company-sec{
+        flex-wrap: wrap;
+    }
+
+    .company-sec .company-img{
+        margin: 10px 20px;
+    }
+
+    .company-sec .company-img img{
+        width: 55px;
+        height: 55px;
+    }
+
+    /* About us part 4 ends */
+
+    /* Testimonial part start */
+
+    /* Testimonial part ends */
+
+    /* Services part start */
+
+    .services{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .services .container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .services .container .s-title{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .services .container .cards{
+        width: 100%;
+        padding: 5px;
+    }
+
+    .services .container .cards .card-container{
+        width: 100%;
+    }
+
+    /* Services part ends */
+
+    /* Call to action part start */
+
+    .call{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .call .container{
+        margin: 5px;
+    }
+
+    /* Call to action part ends */
+
+    /* Contact us part start */
+
+
+    .contact{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .contact .side-spacing{
+        margin: 5px 0
+    }
+
+    .contact .side-spacing .title{
+        width: 100%;
+        text-align: center;
+        padding: 0 0 15px;
+    }
+
+    .contact .side-spacing .title h1{
+        margin-bottom: 10px;
+    }
+
+    .contact .side-spacing .form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact .side-spacing .form .left{
+        width: 100%;
+    }
+
+    .contact .side-spacing .form .left .comp .icon{
+        width: 44px;
+        height: 44px;
+    }
+
+    .contact .side-spacing .form .left .comp .desc{
+        width: 150.33px;
+    }
+
+    .contact .side-spacing .form .right{
+        width: 100%;
+    }
+
+    .contact .side-spacing .form .right form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact .side-spacing .form .right form .fline{
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .contact .side-spacing .form .right form .fline .input{
+        width: 100%;
+        padding: 0 0 0;
+    }
+
+    .contact .side-spacing .form .right form .fline .input{
+        width: 100%;
+    }
+    
+    .contact .side-spacing .form .right form .sline{
+        width: 100%;
+        padding: 0;
+    }
+
+    .contact .side-spacing .form .right form .tline{
+        width: 100%;
+        padding: 0;
+    }
+
+    /* Contact us part ends */
+
+    /* Footer start */
+
+    .footer-sec-1 .container{
+        width: auto;
+        margin: 10px;
+        padding: 0 0;
+        flex-direction: column;
+    }
+
+    .footer-sec-1 .container .fi{
+        width: 100%;
+    }
+
+    .footer-sec-1 .container .fi p{
+        width: 100%;
+    }
+
+    .footer-sec-1 .container .fo{
+        width: 100%;
+    }
+
+    .footer-sec-1 .container .fo .input{
+        width: 100%;
+    }
+
+    /* Footer ends */
+
+}
