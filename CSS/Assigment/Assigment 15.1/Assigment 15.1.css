@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blanchedalmond;
+    padding: 90px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    gap: 10px;
+}
+
+.image1{
+    background-image: url(./img/dmitrii-shirnin-f-cWOonHr-Y-unsplash.jpg);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.image2{
+    background-image: url(./img/eberhard-grossgasteiger-IGk84IY9oas-unsplash.jpg);
+}
+
+.image3{
+    background-image: url(./img/kaid-zN1Dq5fct0A-unsplash.jpg);
+}
+
+.image4{
+    background-image: url(./img/nunzio-guerrera-gHZa4S4Fhfo-unsplash.jpg);
+}
+
+.image5{
+    background-image: url(./img/william-warby-0xDOlFO6kGQ-unsplash.jpg);
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.image6{
+    background-image: url(./img/william-warby-bv2svF6uVGE-unsplash.jpg);
+}
+
+.images {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 300px; */
+}
