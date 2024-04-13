@@ -66,15 +66,16 @@
         margin: 0 0px;
         padding: 40px 0px;
         grid-template-columns: 379px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        flex-direction: column;
+        width: 100%;
     }
 
     .about2 .container2 .contain{
         padding: 20px 0;
         width: 100%;
-    }
-
-    .about2 .container2 .contain h4{
-
     }
 
     .about2 .container2 .contain p{
@@ -100,16 +101,57 @@
         padding: 20px;
     }
 
-    .features .box .right{
-        /* padding: 20px; */
-
-    }
-
     .features .box .right img{
         width: 350px;
     }
 
     /* Feature end */
+
+    /* Services start */
+
+    .services{
+        width: 100%;
+    }
+
+    .services .container3{
+        width: 100%;
+        margin: 0 0px;
+        padding: 20px 0;
+    }
+
+    .services .container3 .cards{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 25px;
+        width: 100%;
+        grid-template-columns: 300px;
+    }
+
+    /* Services end */
+
+    /* Portfolio start */
+
+    .portfolio .container4{
+        width: 100%;
+        margin: 0 0px;
+    }
+
+    .portfolio .container4 .images{
+        grid-template-columns: 360px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .portfolio .container4 .images .img{
+        width: 100%;
+    }
+
+    /* Portfolio end */
 
     /* Main end */
 }
