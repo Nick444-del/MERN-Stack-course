@@ -150,8 +150,59 @@
     .portfolio .container4 .images .img{
         width: 100%;
     }
-
     /* Portfolio end */
+
+    /* Team start */
+    .team{
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .team .container5{
+        width: 100%;
+        margin: 0 0px;
+        padding: 20px 0;
+    }
+    .team .container5 .team-contain{
+        width: 100%;
+        grid-template-columns: 300px;
+    }
+    /* Team end */
+
+    /* Contact us start */
+
+    .contact .container6{
+        width: 100%;
+        margin: 0 0px;
+    }
+
+    .contact{
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .contact .container6 .inner-sec-1{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contact .container6 .inner-sec-1 .address{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .contact .container6 .inner-sec-1 .map{
+        width: 355px;
+    }
+
+    .contact .container6 .inner-sec-1 .map iframe{
+        width: 100%;
+    }
+
+    /* Contact us end */
 
     /* Main end */
 }

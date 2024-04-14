@@ -480,5 +480,240 @@ header nav ul li a{
 
 /* Portfolio end */
 
+/* Team start */
+.team{
+    padding: 60px 0;
+}
+
+.team .container5{
+    margin: 0 99.6px;
+    padding: 0 12px;
+}
+
+.team .container5 .ttitle{
+    padding: 0 0 40px;
+    text-align: center;
+}
+
+.team .container5 .ttitle h2{
+    margin: 0 0 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    color: #21413C;
+    font-weight: 200;
+}
+
+.team .container5 .ttitle p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #919191;
+}
+
+.team .container5 .team-contain{
+    display: grid;
+    grid-template-columns: 305px 305px 305px 305px;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.team .container5 .team-contain .card{
+    height: 305px;
+    position: relative;
+}
+
+.team .container5 .team-contain .card .name{
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    text-align: center;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0.5) 100%);
+    transform: translateY(160%);
+    transition: all .5s;
+    opacity: 0;
+    padding: 5px;
+}
+
+.team .container5 .team-contain .card .name h4{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.team .container5 .team-contain .card .name span{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.team .container5 .team-contain .card:hover .name{
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.team .container5 .team-contain .card .socials{
+    position: absolute;
+    color: white;
+    transform: translateX(-130%);
+    opacity: 0;
+    transition: all .5s;
+    height: 305px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.team .container5 .team-contain .card .socials ul{
+    padding: 5px;
+    text-align: center;
+}
+
+.team .container5 .team-contain .card .socials ul li{
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 23px;
+}
+
+.team .container5 .team-contain .card:hover .socials{
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.team .container5 .team-contain .card1{
+    background-image: url(./img/team1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.team .container5 .team-contain .card2{
+    background-image: url(./img/team2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.team .container5 .team-contain .card3{
+    background-image: url(./img/team3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.team .container5 .team-contain .card4{
+    background-image: url(./img/team4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* Team end */
+
+/* Contact us start */
+
+.contact{
+    padding: 60px 0;
+}
+
+.contact .container6{
+    margin: 0 99.6px;
+    padding: 0 12px;
+}
+
+.contact .container6 .ctitle{
+    padding: 0 0 40px;
+    text-align: center;
+}
+
+.contact .container6 .ctitle h2{
+    margin: 0 0 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    color: #21413C;
+    font-weight: 200;
+}
+
+.contact .container6 .ctitle p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #919191;
+}
+
+.contact .container6 .inner-sec-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .container6 .inner-sec-1 .address{
+    width: 526px;
+    height: 270px;
+    margin: 0 12px;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contact .container6 .inner-sec-1 .address h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    color: #21413C;
+    font-weight: 300;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.contact .container6 .inner-sec-1 .address p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #919191;
+    margin-left: 20px;
+    line-height: 1.5;
+}
+
+.contact .container6 .inner-sec-1 .address ul li{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 20px;
+}
+
+.contact .container6 .inner-sec-1 .address ul li .icon{
+    background-color: #E1F0EE;
+    color: #1bac91;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.contact .container6 .inner-sec-1 .map{
+    margin: 0 12px;
+}
+
+.contact .container6 .inner-sec-1 .map iframe{
+    width: 526px;
+    height: 270px;
+}
+
+.contact .container6 .inner-sec-2{
+    margin: 48px -12px 0;
+}
+
+.contact .container6 .inner-sec-2 .form{
+    width: 100%;
+    margin: 12px;
+    padding: 30px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contact us end */
+
 /* Main ends */
 
