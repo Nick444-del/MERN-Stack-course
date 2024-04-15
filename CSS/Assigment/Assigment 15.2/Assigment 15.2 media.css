@@ -165,7 +165,7 @@
     }
     .team .container5 .team-contain{
         width: 100%;
-        grid-template-columns: 300px;
+        grid-template-columns: 385px;
     }
     /* Team end */
 
@@ -195,14 +195,72 @@
     }
 
     .contact .container6 .inner-sec-1 .map{
-        width: 355px;
+        width: 99%;
     }
 
     .contact .container6 .inner-sec-1 .map iframe{
         width: 100%;
     }
 
+    .contact .container6 .inner-sec-2{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contact .container6 .inner-sec-2 .form{
+        width: 100%;
+        margin: 0 0 10px 25px;
+
+    }
+
+    .contact .container6 .inner-sec-2 .form form{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contact .container6 .inner-sec-2 .form form .first-line{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contact .container6 .inner-sec-2 .form form .first-line input{
+        width: 95%;
+        margin-bottom: 10px;
+    }
+
+    .contact .container6 .inner-sec-2 .form form .second-line{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact .container6 .inner-sec-2 .form form .second-line input{
+        width: 95%;
+    }
+
     /* Contact us end */
 
     /* Main end */
+
+    /* footer start */
+
+    footer{
+        padding: 20px 0;
+    }
+
+    footer .foot-box{
+        margin: 20px;
+        flex-direction: column;
+    }
+    /* footer end */
 }

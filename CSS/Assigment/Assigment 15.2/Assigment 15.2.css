@@ -46,10 +46,11 @@ header nav ul li::after{
     content: '';
     width: 0;
     height: 2px;
-    background-color: white;
+    background-color: #1bac91;
     display: block;
     margin: auto;
     transition: all 0.5s;
+    margin-top: 5px;
 }
 
 header nav ul li:hover::after{
@@ -390,11 +391,36 @@ header nav ul li a{
     justify-content: center;
     flex-direction: column;
     opacity: 0;
+    transform: scale(0.8);
     transition: all .5s;
+    position: relative;
+}
+
+.portfolio .container4 .images .img .overlay::before{
+    position: absolute;
+    content: "";
+    height: 50px;
+    width: 50px;
+    top: 10%;
+    left: 10%;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+}
+.portfolio .container4 .images .img .overlay::after{
+    position: absolute;
+    content: "";
+    height: 50px;
+    width: 50px;
+    bottom: 10%;
+    right: 10%;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
 }
 
 .portfolio .container4 .images .img:hover .overlay{
     opacity: 1;
+    transform: scale(1);
+
 }
 
 .portfolio .container4 .images .img .overlay h4{
@@ -520,6 +546,7 @@ header nav ul li a{
 .team .container5 .team-contain .card{
     height: 305px;
     position: relative;
+    overflow: hidden;
 }
 
 .team .container5 .team-contain .card .name{
@@ -527,7 +554,8 @@ header nav ul li a{
     bottom: 5%;
     right: 10%;
     text-align: center;
-    background-image: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0.5) 100%);
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 33px black;
     transform: translateY(160%);
     transition: all .5s;
     opacity: 0;
@@ -713,7 +741,238 @@ header nav ul li a{
     justify-content: center;
 }
 
+.contact .container6 .inner-sec-2 .form form .first-line{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .container6 .inner-sec-2 .form form .first-line input{
+    width: 600px;
+    margin: 0 12px;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #919191;
+    border: 1px solid #919191;
+}
+
+.contact .container6 .inner-sec-2 .form form .second-line{
+    margin-top: 20px;
+}
+
+.contact .container6 .inner-sec-2 .form form .second-line input{
+    width: 1225px;
+    margin: 0 12px;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    border: 1px solid #919191;
+}
+
+.contact .container6 .inner-sec-2 .form form .third-line{
+    margin-top: 20px;
+}
+
+.contact .container6 .inner-sec-2 .form form .third-line{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contact .container6 .inner-sec-2 .form form .third-line textarea{
+    width: 1225px;
+    margin: 0 12px;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    border: 1px solid #919191;
+}
+
+.contact .container6 .inner-sec-2 .form form .fourth-line{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .container6 .inner-sec-2 .form form .fourth-line a{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    background-color: #1BAC91;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 12px;
+    transition: 0.5s;
+}
+
 /* Contact us end */
 
 /* Main ends */
 
+footer{
+    padding: 60px 0 30px;
+    background-color: #0C1817;
+    width: 100%;
+}
+
+footer .foot-box{
+    margin: 0 99.6px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+footer .foot-comp{
+    width: 100%;
+    padding: 0 12px;
+    height: 184px;
+    color: white;
+}
+
+footer .foot-box .foot1{
+    margin: 0 0 30px;
+}
+
+footer .foot1 h3{
+    margin: 0 0 20px;
+    padding: 2px 0;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+}
+
+footer .foot1 p{
+    margin: 10px 0 20px;
+    line-height: 15px;
+}
+
+footer .foot-box .foot1 .soc{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 16px 0 8px;
+}
+
+footer .foot-box .foot1 .soc .i-box{
+    padding: 8px 0;
+    margin: 0 4px 0 0;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c3733;
+    border-radius: 50%;
+    transition: all .5s;
+}
+
+footer .foot-box .foot1 .soc .i-box:hover{
+    background-color: #4ae3c6;
+}
+
+footer .foot-box .foot2{
+    margin: 0 0 30px;
+}
+
+footer .foot-box .foot2 h4{
+    margin: 0 0 8px;
+    padding: 0 0 12px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+footer .foot-box .foot2 ul li{
+    padding: 0 0 10px;
+}
+
+footer .foot-box .foot2 ul li i{
+    margin: 0 5px 0 0;
+    font-size: 14px;
+    color: #4ae3c6;
+}
+
+footer .foot-box .foot2 ul li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+footer .foot-box .foot3{
+    margin: 0 0 30px;
+}
+
+footer .foot-box .foot3 h4{
+    margin: 0 0 8px;
+    padding: 0 0 12px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+footer .foot-box .foot3 ul li{
+    padding: 0 0 10px;
+}
+
+footer .foot-box .foot3 ul li i{
+    margin: 0 5px 0 0;
+    font-size: 14px;
+    color: #4ae3c6;
+}
+
+footer .foot-box .foot3 ul li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+footer .foot-box .foot4{
+    margin: 0 0 30px;
+}
+
+footer .foot-box .foot4 h4{
+    margin: 0 0 8px;
+    padding: 0 0 12px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+footer .foot-box .foot4 p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0 0 16px;
+}
+
+footer .foot-box .foot4 form input{
+    padding: 6px 10px;
+    margin: 30px 0 0;
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+    border: none;
+    margin: 0 16px 0 0;
+}
+
+footer .foot-box .foot4 form button{
+    padding: 6px 10px;
+    border-radius: 5px;
+    width: 25%;
+    margin-left: 0;
+    outline: none;
+    border: none;
+    background-color: #1BAC91;
+    color: white;
+    cursor: pointer;
+}
+
+footer .foot-box .foot4 form{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
