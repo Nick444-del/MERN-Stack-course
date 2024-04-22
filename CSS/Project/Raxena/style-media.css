@@ -446,6 +446,60 @@
         margin-top: 20px;
     }
 
+    .sec8 .sec8-contain{
+        grid-template-columns: auto;
+        height: 100%;
+        gap: 10px;
+    }
+
+    .sec8 .sec8-contain .sec8-card{
+        height: 100%;
+        gap: 10px;
+    }
+
+    .sec8 .sec8-contain .sec8-card .overlay{
+        width: 100%;
+    }
+
+    .sec9{
+        padding: 45px 0;
+    }
+
+    .sec9 .sec9-container{
+        margin: 0 15px;
+        padding: 0 10px;
+    }
+
+    .sec9 .sec9-container .sec9-box-box{
+        flex-direction: column;
+    }
+
+    .sec9 .sec9-container .sec9-box-box .left{
+        width: auto;
+        margin-bottom: 10px;
+    }
+
+    .sec9 .sec9-container .sec9-box-box .right{
+        width: 100%;
+    }
+
+    .sec9 .sec9-container .sec9-box-box .right .upper{
+        flex-direction: column;
+    }
+
+    .sec9 .sec9-container .sec9-box-box .right .upper .img-side{
+        width: auto;
+        height: 430px;
+    }
+
+    .sec9 .sec9-container .sec9-box-box .right .lower{
+        flex-direction: column;
+    }
+
+    .sec9 .sec9-container .sec9-box-box .right .lower .img-side{
+        width: auto;
+        height: 430px;
+    }
 
     /* Home page end */
 }

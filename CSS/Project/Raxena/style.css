@@ -2108,13 +2108,17 @@ footer .se-2 .fcontainer .fcomponent4 a:hover{
     grid-template-columns: 301px 301px 301px 301px 301px;
     height: 340px;
     padding: 0 5px;
+    margin: 10px 0;
+    background-color: #f2f4f8;
 }
 
 .sec8 .sec8-contain .sec8-card{
     width: 100%;
     padding: 0 5px;
-    margin: 0 0 10px;
     height: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: all .5s;
 }
 
 .sec8 .sec8-contain .sec8-card img{
@@ -2122,7 +2126,286 @@ footer .se-2 .fcontainer .fcomponent4 a:hover{
     height: 100%;
 }
 
+.sec8 .sec8-contain .sec8-card .overlay{
+    width: 291px;
+    transform: translateY(-100%);
+    height: 100%;
+    background-color: rgba(30, 20, 96, 0.656);
+    z-index: 5;
+    position: absolute;
+    transition: all .5s;
+    z-index: 3;
+}
 
+.sec8 .sec8-contain .sec8-card:hover .overlay{
+    transform: translateY(0);
+}
 
+.sec8 .sec8-contain .sec8-card .plus{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: -20%;
+    background-color: #fe982f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 38px;
+    transition: all .5s;
+    z-index: 6;
+}
 
+.sec8 .sec8-contain .sec8-card:hover .plus{
+    right: 1.5%;
+}
+
+.sec8 .sec8-contain .sec8-card .card-i{
+    width: 100%;
+    height: 150px;
+    background-color: #fe982f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    transform-style: preserve-3d;
+    transition: all .5s;
+    z-index: 6;
+}
+
+.sec8 .sec8-contain .sec8-card:hover .card-i{
+    height: 40%;
+    transform: translateY(-100%);
+    transform-style: preserve-3d;
+}
 /* Sec 8 end */
+
+/* Sec 9 start */
+
+.sec9{
+    padding: 90px 0;
+    background-image: url(../Raxena/assets/home\ sec91.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sec9 .sec9-container{
+    margin: 0 174.6px;
+    padding: 0 15px;
+}
+
+.sec9 .sec9-container .sec9-title{
+    margin: 0 0 65px;
+    text-align: center;
+}
+
+.sec9 .sec9-container .sec9-title h5{
+    text-transform: uppercase;
+    color: #fe982f;
+    margin: 0 0 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.sec9 .sec9-container .sec9-title h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 38px;
+    color: #081528;
+    text-transform: capitalize;
+}
+
+.sec9 .sec9-container .sec9-box-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec9 .sec9-container .sec9-box-box .left{
+    padding: 0 15px;
+    width: 555px;
+}
+
+.sec9 .sec9-container .sec9-box-box .left .image{
+    background-image: url(../Raxena/assets/home\ sec92.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 290px;
+    padding: 10px;
+    box-shadow: 10px 10px 50px grey;
+}
+
+.sec9 .sec9-container .sec9-box-box .left .image .date{
+    text-align: left;
+    padding: 13px 5px 7px;
+    color: white;
+    font-family: 'Josefine Sans', sans-serif;
+    font-size: 20px;
+    display: flex;
+    width: min-content;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fe982f;
+    transition: all .5s;
+}
+
+.sec9 .sec9-container .sec9-box-box .left:hover .image .date{
+    transform: rotateY(360deg);
+}
+
+.sec9 .sec9-container .sec9-box-box .left .content{
+    padding: 40px 25px;
+    background-color: #f4f4f4;
+    box-shadow: 10px 10px 50px grey;
+    text-align: center;
+}
+
+.sec9 .sec9-container .sec9-box-box .left .content h5 a{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 21px;
+    color: #081528;
+}
+
+.sec9 .sec9-container .sec9-box-box .left .content p{
+    font-family: 'Poppins', sans-serif;
+    padding: 5px 0 0;
+    margin: 0 0 15px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.sec9 .sec9-container .sec9-box-box .left .content .bottem{
+    display: flex;
+}
+
+.sec9 .sec9-container .sec9-box-box .left .content .bottem .comment i{
+    font-size: 13px;
+    color: #fe982f;
+}
+
+.sec9 .sec9-container .sec9-box-box .right{
+    padding: 0 15px;
+    width: 555px;
+}
+
+.sec9 .sec9-container .sec9-box-box .right .upper{
+    margin: 0 0 30px;
+    display: flex;
+}
+
+.sec9 .sec9-container .sec9-box-box .right .upper .img-side{
+    background-image: url(../Raxena/assets/home\ sec93.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 257px;
+    width: 1032px;
+    padding: 10px;
+}
+
+.sec9 .sec9-container .sec9-box-box .right .upper .img-side .date {
+    text-align: left;
+    padding: 13px 5px 7px;
+    color: white;
+    font-family: 'Josefine Sans', sans-serif;
+    font-size: 20px;
+    display: flex;
+    width: min-content;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fe982f;
+    transition: all .5s;
+}
+
+.sec9 .sec9-container .sec9-box-box .right .upper:hover .img-side .date {
+    transform: rotateY(360deg);
+}
+
+.sec9 .sec9-container .sec9-box-box .right .upper .text-side{
+    padding: 30px;
+    background-color: #f4f4f4;
+}
+
+.sec9 .sec9-container .sec9-box-box .right .upper .text-side h5 a{
+    font-family: 'Josefine Sans', sans-serif;
+    font-size: 21px;
+    color: #081528;
+}
+
+.sec9 .sec9-container .sec9-box-box .right .upper .text-side .user-c i{
+    color: #fe982f;
+}
+
+.sec9 .sec9-container .sec9-box-box .right .upper .text-side .user-c{
+    padding: 7px 0;
+}
+
+.sec9 .sec9-container .sec9-box-box .right .upper .text-side p{
+    padding: 10px 0 0;
+}
+
+.sec9 .sec9-container .sec9-box-box .right .lower .img-side{
+    background-image: url(../Raxena/assets/home\ sec94.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 257px;
+    width: 1032px;
+    padding: 10px;
+}
+
+.sec9 .sec9-container .sec9-box-box .right .lower{
+    margin: 0 0 30px;
+    display: flex;
+}
+
+.sec9 .sec9-container .sec9-box-box .right .lower .img-side .date {
+    text-align: left;
+    padding: 13px 5px 7px;
+    color: white;
+    font-family: 'Josefine Sans', sans-serif;
+    font-size: 20px;
+    display: flex;
+    width: min-content;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fe982f;
+    transition: all .5s;
+}
+
+.sec9 .sec9-container .sec9-box-box .right .lower:hover .img-side .date {
+    transform: rotateY(360deg);
+}
+
+.sec9 .sec9-container .sec9-box-box .right .lower .text-side{
+    padding: 30px;
+    background-color: #f4f4f4;
+}
+
+.sec9 .sec9-container .sec9-box-box .right .lower .text-side h5 a{
+    font-family: 'Josefine Sans', sans-serif;
+    font-size: 21px;
+    color: #081528;
+}
+
+.sec9 .sec9-container .sec9-box-box .right .lower .text-side .user-c i{
+    color: #fe982f;
+}
+
+.sec9 .sec9-container .sec9-box-box .right .lower .text-side .user-c{
+    padding: 7px 0;
+}
+
+.sec9 .sec9-container .sec9-box-box .right .lower .text-side p{
+    padding: 10px 0 0;
+}
+
+
+/* Sec 9 end */
