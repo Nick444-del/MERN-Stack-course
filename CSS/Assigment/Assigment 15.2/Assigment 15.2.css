@@ -202,6 +202,28 @@ header nav ul li a{
     padding: 40px;
 }
 
+.about2 .container2 .contain1{
+    border-right: 1px solid #1bac91;
+    border-bottom: 1px solid #1bac91;
+}
+.about2 .container2 .contain2{
+    border-bottom: 1px solid #1bac91;
+    border-right: 1px solid #1bac91;
+}
+.about2 .container2 .contain3{
+    /* border-left: 1px solid #1bac91; */
+    border-bottom: 1px solid #1bac91;
+}
+
+.about2 .container2 .contain4{
+    border-right: 1px solid #1bac91;
+}
+.about2 .container2 .contain5{
+    border-right: 1px solid #1bac91;
+}
+
+
+
 .about2 .container2 .contain span{
     color: #1BAC91;
     font-size: 24px;
@@ -547,6 +569,7 @@ header nav ul li a{
     height: 305px;
     position: relative;
     overflow: hidden;
+    transition: all .5s;
 }
 
 .team .container5 .team-contain .card .name{

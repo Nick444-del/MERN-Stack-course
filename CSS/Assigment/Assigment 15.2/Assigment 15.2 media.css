@@ -74,9 +74,14 @@
     }
 
     .about2 .container2 .contain{
-        padding: 20px 0;
+        padding: 20px 10px;
         width: 100%;
     }
+
+    .about2 .container2 .contain4, .contain5{
+        border-bottom: 1px solid #1bac91;
+    }
+
 
     .about2 .container2 .contain p{
         width: 100%;

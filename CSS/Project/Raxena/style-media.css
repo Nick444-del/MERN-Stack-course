@@ -1,0 +1,451 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .icons {
+        top: 20%;
+    }
+
+    header nav {
+        flex-direction: column;
+    }
+
+    header nav .left {
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    header nav .left ul {
+        gap: 7px;
+    }
+
+    header nav .right {
+        justify-content: center;
+    }
+
+    footer .se-1 {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    footer .se-1 .fimg {
+        padding: 50px 0;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    footer .se-1 .fimg img {
+        height: 41px;
+        width: 197px;
+    }
+
+    footer .se-1 .fdesc {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+        height: 100%;
+    }
+
+    footer .se-1 .fdesc .iemail {
+        width: 100%;
+    }
+
+    footer .se-1 .fdesc .iemail input {
+        width: 80%;
+    }
+
+    footer .se-2 .fcontainer .fcomponents {
+        padding: 0 10px;
+        margin: 22px 0 22px;
+    }
+
+    footer .se-2 {
+        padding: 50px 0;
+    }
+
+    footer .se-2 .fcontainer {
+        grid-template-columns: 290px;
+        margin: 0 15px;
+        padding: 0 10px;
+    }
+
+    footer .se-2 .fcontainer .fcomponent3 ul li .fesc p a {
+        width: 100%;
+        line-height: 1.5;
+    }
+
+
+    /* Project page start */
+
+    .pgallery {
+        width: 100%;
+    }
+
+    .project-main .pgallery .portfoliogallerycontainer {
+        width: 100%;
+        grid-template-columns: 360px;
+        z-index: 0;
+    }
+
+    /* Project page end */
+
+    /* Team page start */
+
+    .team-container {
+        grid-template-columns: 360px;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .team-container .team-members {
+        width: 100%;
+        margin: 10px 0;
+        padding: 0;
+    }
+
+
+    /* Team page end */
+
+    /* Contact page start */
+
+    .contact-main .contact-gallery {
+        grid-template-columns: 360px;
+        gap: 15px;
+        margin: 0;
+        padding: 45px 0;
+    }
+
+    .contact-main .creach {
+        margin: 10px;
+        padding: 0 0 45px;
+    }
+
+    .contact-main .creach .creach-contain {
+        flex-direction: column;
+        gap: 20px;
+        margin: 0;
+    }
+
+    .contact-main .creach .creach-contain .left {
+        width: 100%;
+        padding: 0;
+    }
+
+    .contact-main .creach .creach-contain .left .map {
+        width: 100%;
+    }
+
+    .contact-main .creach .creach-contain .right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .contact-main .creach .creach-contain .right .form {
+        width: 100%;
+        height: 100%;
+    }
+
+    .contact-main .creach .creach-contain .right .form form .fline {
+        flex-direction: column;
+    }
+
+    .contact-main .creach .creach-contain .right .form form .fline input {
+        width: 100%;
+    }
+
+
+    .contact-main .creach .creach-contain .right .form form .foline a {
+        width: 100%;
+    }
+
+    /* Contact page end */
+
+    /* Service page start */
+
+    .service-main .service-container {
+        margin: 0 10px;
+        padding: 0 15px;
+    }
+
+    .service-main .service-container .service-row {
+        grid-template-columns: 390px;
+    }
+
+    .service-main-start {
+        height: 100%;
+        padding: 90px 0;
+        margin: 70px 0;
+    }
+
+    .service-main .service-container .service-row .lower-space {
+        margin-bottom: 140px;
+    }
+
+    /* Service page end */
+
+    /* About us start */
+    .ab-sec1 {
+        padding: 30px 0;
+    }
+
+    .ab-sec1 .sec1-container {
+        margin: 0;
+        padding: 0 15px;
+    }
+
+    .ab-sec1 .sec1-container .sec1-row .left {
+        width: 100%;
+    }
+
+    .ab-sec1 .sec1-container .sec1-row .left .img-container {
+        width: 100%;
+    }
+
+    .ab-sec1 .sec1-container .sec1-row .left .img-container img {
+        width: 100%;
+    }
+
+    .ab-sec1 .sec1-container .sec1-row {
+        flex-direction: column;
+    }
+
+    .ab-sec-2 {
+        flex-direction: column;
+    }
+
+    .ab-sec-2 .ab-sec-2-container-left {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .ab-sec-2 .ab-sec-2-container-left .right .box {
+        width: 66%;
+        height: 473px;
+    }
+
+    .ab-sec-2 .ab-sec-2-container-left .right .box ul li::after {
+        width: 100%;
+    }
+
+    .ab-sec-2 .ab-sec-2-container-left .right .box ul .second::before {
+        width: 75%;
+    }
+
+    .ab-sec-2 .ab-sec-2-container-left .right .box ul .first::before {
+        width: 85%;
+    }
+
+    .ab-sec-2 .ab-sec-2-container-left .right .box ul .third::before {
+        width: 85%;
+    }
+
+    .ab-sec-2 .ab-sec-2-container-left .right {}
+
+    .ab-sec-2 .ab-sec-2-container-left .boxl h2 {
+        width: 85%;
+    }
+
+    .ab-sec-2 .ab-sec-2-container-right {
+        background-size: 140% 165%;
+        width: 100%;
+        height: 573px;
+    }
+
+    /* About us end */
+
+    /* Home page start */
+
+    .hero-main .hsec-1 .title-container {
+        padding: 25px;
+    }
+
+    .hero-main .hsec-1 .title-container p::after {
+        bottom: -55%;
+    }
+
+    .hero-main .hsec-1 .title-container h1 {
+        width: 100%;
+        margin: 0 0px;
+    }
+
+    .hsec-2 {
+        padding: 25px 0;
+        width: auto;
+        height: 215vh;
+    }
+
+    .hsec-2 .sec-2-container {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .hsec-2 .sec-2-container .left {
+        padding: 0;
+    }
+
+    .hsec-2 .sec-2-container .left img {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hsec-2 .sec-2-container .right {
+        width: 100%;
+    }
+
+    .hsec-2 .sec-2-container .right .info .info-title h1 {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .hsec-2 .sec-2-container .right .info {
+        width: 100%;
+    }
+
+    .hsec-2 .sec-2-container .right .info .info-title h5 {
+        width: 100%;
+    }
+
+    .hsec-2 .sec-2-container .right .info .mini-card {
+        width: 100%;
+    }
+
+    .hsec-2 .sec-2-container .right .info .mini-card .needs {
+        width: 100%;
+    }
+
+    .sec3 .sec3-container .inner-contain .se3title h2 {
+        margin-top: 25px;
+    }
+
+    .sec3 .sec3-container {
+        width: 90%;
+        height: 100%;
+        border-right: 10px solid #fe982f;
+    }
+
+    .sec3 .sec3-container .inner-contain {
+        margin: 0;
+        width: 100%;
+    }
+
+    .sec3 .sec3-container .inner-contain .se3title {
+        width: 100%;
+    }
+
+    .sec3 .sec3-container .inner-contain .list-box {
+        flex-direction: column;
+        justify-content: left;
+    }
+
+
+    .sec3 .sec3-container .inner-contain .list-box .l1 {
+        width: 311px;
+    }
+
+    .sec3 .sec3-container .inner-contain .mini-card {
+        grid-template-columns: 227px;
+        gap: 20px;
+        margin-bottom: 10px;
+    }
+
+    .sec3 .sec3-container .inner-contain .mini-card .achivements {
+        width: 100%;
+    }
+
+    .sec4 .sec4-container{
+        margin: 0 10px;
+        padding: 0 5px;
+    }
+
+    .sec4 .sec4-container .sec4-title::before{
+        left: 55%;
+    }
+
+    .sec4 .sec4-container .card-box{
+        grid-template-columns: auto;
+    }
+
+    .sec5{
+        padding: 40px 0 60px 0;
+    }
+
+    .sec5 .sec5-container{
+        margin: 0 10px;
+        padding: 0 15px;
+    }
+
+    .sec5 .sec5-container h1{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .sec6 .sec6-container{
+        margin: 0 15px;
+        padding: 0 10px;
+    }
+
+    .sec6 .sec6-container .row{
+        flex-direction: column;
+    }
+
+    .sec6 .sec6-container .row .left{
+        width: 100%;
+    }
+
+    .sec6 .sec6-container .row .left img{
+        width: 100%;
+    }
+
+    .sec7{
+        padding: 80px 0 45px 0;
+    }
+
+    .sec7 .sec7-container{
+        margin: 0 15px;
+        padding: 0 10px;
+    }
+
+    .sec7 .sec7-container .sec7-grid{
+        grid-template-columns: auto;
+    }
+
+    .sec7 .sec7-container .sec7-grid .quote{
+        margin: 10px 0;
+    }
+
+    .sec7 .sec7-container .sec7-title h2::before{
+        right: 34.5%;
+    }
+
+    .sec8 .sec8-title{
+        padding: 45px 0;
+    }
+
+    .sec8 .sec8-title .sec8-title-container{
+        margin: 0 15px;
+        padding: 0 10px;
+    }
+
+    .sec8 .sec8-title .sec8-title-container .in-cont{
+        flex-direction: column;
+        text-align: left;
+    }
+    .sec8 .sec8-title .sec8-title-container .in-cont .left{
+        width: 100%;
+    }
+
+    .sec8 .sec8-title .sec8-title-container .in-cont .right{
+        width: auto;
+        margin-top: 20px;
+    }
+
+
+    /* Home page end */
+}
