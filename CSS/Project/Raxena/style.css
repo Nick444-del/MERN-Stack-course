@@ -1723,8 +1723,8 @@ footer .se-2 .fcontainer .fcomponent4 a:hover{
 .sec4 .sec4-container .card-box .card .middlecard{
     margin: 0 30px;
     padding: 40px 55px;
-    background-color: #F4F7FB;
-    box-shadow: 5px 5px 60px black;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .07);
     width: 100%;
     height: 401px;
     display: flex;
@@ -1739,6 +1739,7 @@ footer .se-2 .fcontainer .fcomponent4 a:hover{
     font-weight: 700;
     color: #081528;
     text-align: center;
+
 }
 
 .sec4 .sec4-container .card-box .card .middlecard .blackb p{
