@@ -98,3 +98,12 @@ console.log(a>b);
 console.log(a>=b);
 console.log(a<b);
 console.log(a<=b);
+
+// Interview Question
+
+var a = 10;
+// var b = a++;
+var b = ++a;
+
+console.log(a);
+console.log(b);

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise 1</title>
+    <style>
+        #display{
+            width: 400px;
+            height: 400px;
+            background-color: beige;
+            display: none;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <div id="abc"></div>
+    <button onclick="text()">Text</button>
+    <button onclick="display()">Display</button>
+    <button onclick="clear1()">Clear</button>
+
+    <div id="display">
+
+    </div>
+    <script>
+        function text(){
+            var a = document.getElementById("abc");
+            a.innerHTML = "<input id ='text1' placeholder = 'name'>";
+        }
+        function display() {
+            var text1 = document.getElementById("text1");
+            var display = document.getElementById("display");
+
+            var ans = "name "+text1.value;
+            display.innerHTML = ans;
+            var a = document.getElementById("abc");
+            abc.style.display = "none";
+            display.style.display = "block";
+        }
+
+        function clear1(){
+            var display = document.getElementById("display");
+            display = "";
+        }
+    </script>
+</body>
+</html>
