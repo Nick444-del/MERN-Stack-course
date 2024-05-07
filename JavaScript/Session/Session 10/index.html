@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 10</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        #b1{
+            background-color: cyan;
+            color: white;
+        }
+
+        button{
+            height: 50px;
+            width: 100px;
+            box-shadow: 5px;
+            border: none;
+            outline: none;
+            background-color: lightgray;
+            cursor: pointer;
+        }
+        img{
+            height: 600px;
+            width: 450px;
+            margin: 10px;
+        }
+        #modal{
+            background-color: rgba(0,0,0,0.5);
+            /* display: none; */
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 600px;
+            border: 1px solid black;
+            padding: 20px;
+            transform: scale(0);
+            transition: all .5s;
+        }
+        .close{
+            position: absolute;
+            right: 5%;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: tomato;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- <button onclick="btn(this)" id="b1">Text 1</button>
+    <button onclick="btn(this)" id="b2">Text 2</button>
+    <button onclick="btn(this)" id="b3">Text 3</button>
+    <button onclick="btn(this)" id="b4">Text 4</button>
+    <button onclick="btn(this)" id="b5">Text 5</button> -->
+
+    <!-- <img src="./img/pic1.jpg" onmouseover="mouse_over(this,3)" onmouseout="mouse_out(this,1)" alt="" srcset="">
+    <img src="./img/pic2.jpg" onmouseover="mouse_over(this,4)" onmouseout="mouse_out(this,2)" alt="" srcset=""> -->
+
+    <button onclick="open_modal(this, 'Hello')">Tab 1</button>
+    <button onclick="open_modal(this, 'JS')">Tab 2</button>
+    <button onclick="open_modal(this, 'Hi')">Tab 3</button>
+    <div class="sec1" id="modal">
+        <input type="text" name="" id="text">
+        <button onclick="close1()" class="close">X</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment 7</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="title">
+                <h1>portfolio</h1>
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="img img1">
+                    <img src="./img/pic1.png" onclick="open_modal(this, 'LOG CABIN')" alt="">
+                    <i class="fa fa-plus"></i>
+                </div>
+                <div class="img img2">
+                    <img src="./img/pic2.png" onclick="open_modal(this, 'TASTY CAKE')" alt="">
+                    <i class="fa fa-plus"></i>
+                </div>
+                <div class="img img3">
+                    <img src="./img/pic3.png" onclick="open_modal(this, 'CIRCUS TENT')"alt="">
+                    <i class="fa fa-plus"></i>
+                </div>
+                <div class="img img4">
+                    <img src="./img/pic4.png" onclick="open_modal(this, 'CONTROLLER')" alt="">
+                    <i class="fa fa-plus"></i>
+                </div>
+                <div class="img img5">
+                    <img src="./img/pic5.png" onclick="open_modal(this, 'LOCKED SAFE')" alt="">
+                    <i class="fa fa-plus"></i>
+                </div>
+                <div class="img img6">
+                    <img src="./img/pic6.png" onclick="open_modal(this, 'SUBMARINE')" alt="">
+                    <i class="fa fa-plus"></i>
+                </div>
+            </div>
+            <div class="modal" id="modal1">
+                <div class="closing">
+                    <h1 class="close" onclick="close2()" id="close1()">X</h1>
+                </div>
+                <div class="m-container">
+                    <div class="inner-content">
+                        <div class="title">
+                            <h1 id="m-title">ABC</h1>
+                        </div>
+                        <div class="m-star">
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="m-image">
+                            <img src="./img/pic1.png" alt="">
+                        </div>
+                        <div class="m-para">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta commodi id soluta eveniet? Necessitatibus explicabo, incidunt eius corrupti repellendus tempore aspernatur obcaecati placeat quae cum vitae nam fuga veniam optio earum corporis numquam at.</p>
+                        </div>
+                        <div class="m-close">
+                            <a href="#" onclick="close1()">X Close Window</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

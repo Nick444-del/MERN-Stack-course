@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment 6</title>
+</head>
+
+<body>
+
+
+    <script>
+        console.log("Hello user");
+
+        // Question 1
+        
+
+        for (var i = 1; i <= 5; i++) {
+            for (var j = 1; j <= i; j++) {
+                document.write("&nbsp");
+            }
+            for (var k = 5; k >= i; k--) {
+                document.write(k);
+            }
+            document.write("<br>");
+        }
+
+        document.write("<br>");
+        document.write("<br>");
+
+        // Question 2
+
+        var d = 1;
+        for (var a = 1; a <= 4; a++) {
+            for (var b = 5; b >= a; b--) {
+                document.write(" &nbsp");
+            }
+            for (var c = 1; c <= a; c++) {
+                document.write(d+"&nbsp");
+                d++;
+            }
+            document.write("<br>");
+        }
+
+        // Question 3
+        // Harshad Number
+
+        var num = +prompt("Enter a number:");
+        var num2 = num;
+        var a = String(num).length;
+        var sum = 0;
+
+        while (num > 0){
+            var b = num % 10;
+            sum += b;
+            num = Math.trunc(num/10);
+        }
+
+        if(num2%sum == 0){
+            document.write("<br>It Harshad Number");
+        }else{
+            document.write("It is not Harshad Number");
+        }
+
+    </script>
+</body>
+
+</html>

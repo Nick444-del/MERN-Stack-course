@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.main{
+    padding: 96px 0;
+}
+
+.main .container{
+    margin: 0 150px;
+    padding: 0 12px;
+}
+
+.main .container .title{
+    text-align: center;
+}
+
+.main .container .title h1{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+.main .container .title .star{
+    margin: 20px 0 24px;
+}
+
+.main .container .title .star i{
+    font-size: 33px;
+    position: relative;
+}
+
+/* .main .container .title .star i:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 0;
+    left: 0;
+    border: 6px solid black;
+}
+
+.main .container .title .star i:before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 0;
+    right: 0;
+    border: 6px solid black;
+} */
+
+.main .container .gallery{
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+}
+
+.main .container .gallery .img1, .img2, .img3, .img4, .img5, .img6{
+    width: 100%;
+    margin: 0 0 48px;
+    padding: 0 12px;
+}
+
+.main .container .gallery .img{
+    position: relative;
+}
+
+.main .container .gallery .img i{
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    color: white;
+    font-size: 45px;
+    display: none;
+    transition: all .5s;
+}
+
+.main .container .gallery .img i:hover{
+    display: block;
+}
+
+
+.main .container .gallery img{
+    width: 100%;
+    transition: all .5s;
+}
+
+
+.main .container .gallery img:hover{
+    background-color: #1abc9c;
+    opacity: .8;
+}
+
+.main .container .modal{
+    height: 100%;
+    width: 1136.8px;
+    display: none;
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    background-color: rgb(216, 215, 215);
+}
+
+.main .container .modal .closing{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(150, 145, 145);
+    text-align: left;
+    padding: 16px;
+    cursor: pointer;
+    width: max-content;
+}
+
+.main .container .modal .m-container{
+    padding: 16px 16px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main .container .modal .m-container .inner-content{
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main .container .modal .m-container .inner-content .m-star{
+    font-size: 33px;
+    margin: 20px 0 24px;
+}
+
+.main .container .modal .m-container .inner-content .m-image{
+    width: 713px;
+    height: 514px;
+    margin: 0 0 48px;
+}
+
+.main .container .modal .m-container .inner-content .m-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.main .container .modal .m-container .inner-content .m-para{
+    text-align: center;
+    width: 713px;
+    margin: 0 0 24px;
+}
+
+
+.main .container .modal .m-container .inner-content{
+    padding: 0 12px;
+}
+
+.main .container .modal .m-container .inner-content .m-close{
+    cursor: pointer;
+}
+
+
+.main .container .modal .m-container .inner-content .m-close a{
+    background-color: #1abc9c;
+    width: 550px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .main .container{
+        margin: 0 10px;
+        padding: 0 5px;
+    }
+
+    .main .container .gallery{
+        grid-template-columns: auto;
+    }
+}
