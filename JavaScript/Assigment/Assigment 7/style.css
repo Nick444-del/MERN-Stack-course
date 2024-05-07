@@ -82,8 +82,8 @@
     transition: all .5s;
 }
 
-.main .container .gallery .img i:hover{
-    display: block;
+.main .container .gallery .img:hover i{
+    display: inline-block;
 }
 
 
