@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.main{
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+}
+
+.main .player{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main .player h3{
+    font-family: 'Ubuntu Sans Mono', monospace;
+    font-size: 25px;
+}
+
+.main .player .line{
+    width: 100%;
+    height: 1px;
+    background-color: burlywood;
+    margin: 10px;
+}
+
+.main .player input{
+    padding: 10px;
+    font-size: 20px;
+    margin: 10px;
+    width: 500px;
+    border: none;
+    outline: none;
+    background-color: aliceblue;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Ubuntu Sans Mono', monospace;
+    font-size: 20px;
+    color: burlywood;
+}
+
+.main .player a{
+    font-family: 'Ubuntu Sans Mono', monospace;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.main .game{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Ubuntu Sans Mono', monospace;
+    display: none;
+}
+
+.main .game h1{
+    font-size: 30px;
+    font-weight: 100;
+    margin: 20px;
+}
+
+.main .game h2{
+    font-size: 27px;
+    font-weight: 700;
+    margin: 15px;
+}
+
+.main .game .game-display{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .game .game-display .left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.main .game .game-display .left h3{
+    margin: 20px;
+}
+
+.main .game .game-display .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.main .game .p-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .game .p-info .p-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.main .game .game-display .right h3{
+    margin: 20px;
+}
+
+.main .game a{
+    font-family: 'Ubuntu Sans Mono', monospace;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+}

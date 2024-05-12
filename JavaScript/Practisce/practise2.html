@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise</title>
+</head>
+<body>
+    
+
+    <script>
+        var arr1 = [50, 80, 90, 10, 20, 100];
+        var greater1 = arr1[0];
+        var lesser1 = arr1[1];
+
+        for (const i in arr1) {
+            if(arr1[i] > greater1){
+                greater1 = arr1[i];
+            }
+        }
+        // document.write(greater1 + "<br>");
+
+        for(var i = 0; i < arr1.length; i++){
+            if(arr1[i] < greater1 && arr1[i] > lesser1){
+                document.write(arr1[i] + "<br>");
+            }
+        }
+
+    </script>
+</body>
+</html>

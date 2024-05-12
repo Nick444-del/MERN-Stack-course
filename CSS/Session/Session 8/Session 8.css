@@ -94,7 +94,7 @@ nav{
     background-color: chartreuse;
     width: 100%;
     position: fixed;
-    top: 10px;
+    top: 0;
 }
 
 ul{

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment 9</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="player" id="player">
+            <h3>Welcome to Dice Game</h3>
+            <div class="line"></div>
+            <input type="text" name="" id="player1" placeholder="Player 1">
+            <input type="text" name="" id="player2" placeholder="Player 2">
+            <a href="#" onclick="play()">click me</a>
+        </div>
+        <div class="game" id="game">
+            <h1>Dice Game</h1>
+            <h2 id="result"></h2>
+            <div class="p-info">
+                <h2 id="ep1">player 1</h2>
+                <h2 id="es1">01</h2>
+                <h2 id="ep2">player 2</h2>
+                <h2 id="es2">01</h2>
+            </div>
+            <div class="game-display">
+                <div class="left">
+                    <div class="player-score">
+                        <h3 id="p-name1">Player 1</h3>
+                    </div>
+                    <img src="./img/Dice1.png" alt="" id="dice1">
+                </div>
+                <div class="right">
+                    <div class="player-score">
+                        <h3 id="p-name2">Player 2</h3>
+                    </div>
+                    <img src="./img/Dice1.png" alt="" id="dice2">
+                </div>
+            </div>
+            <a href="#" onclick="roll()">Roll</a>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

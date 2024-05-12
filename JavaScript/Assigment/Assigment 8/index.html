@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment 8</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="main" id="main">
+        <div class="title">
+            <h1>portfolio</h1>
+            <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+        </div>
+        <div class="list">
+            <ul>
+                <li onclick="fun1(this)">All</li>
+                <li onclick="fun2(this)">App</li>
+                <li onclick="fun3(this)">card</li>
+                <li onclick="fun4(this)">web</li>
+            </ul>
+        </div>
+        <div class="gallery">
+            <div class="images images1 app">
+                <h4>App1</h4>
+                <p>App</p>
+                <div class="icons">
+                    <div class="plus-icon" onclick="open1('app 1', 1)">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </div>
+                    <div class="plus-icon">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="images images2 web">
+                <h4>Web3</h4>
+                <p>Web</p>
+                <div class="icons">
+                    <div class="plus-icon" onclick="open1('web 3', 2)">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </div>
+                    <div class="plus-icon">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="images images3 app">
+                <h4>App2</h4>
+                <p>App</p>
+                <div class="icons">
+                    <div class="plus-icon" onclick="open1('App 2', 3)">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </div>
+                    <div class="plus-icon">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="images images4 card">
+                <h4>Card4</h4>
+                <p>CARD</p>
+                <div class="icons">
+                    <div class="plus-icon" onclick="open1('card 2', 4)">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </div>
+                    <div class="plus-icon">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="images images5 web">
+                <h4>Web2</h4>
+                <p>WEB</p>
+                <div class="icons">
+                    <div class="plus-icon" onclick="open1('Web 2', 5)">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </div>
+                    <div class="plus-icon">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="images images6 app">
+                <h4>App3</h4>
+                <p>App</p>
+                <div class="icons">
+                    <div class="plus-icon" onclick="open1('App 3', 6)">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </div>
+                    <div class="plus-icon">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="images images7 card">
+                <h4>Card 1</h4>
+                <p>CARD</p>
+                <div class="icons">
+                    <div class="plus-icon" onclick="open1('Card 1', 7)">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </div>
+                    <div class="plus-icon">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="images images8 card">
+                <h4>Card 2</h4>
+                <p>CARD</p>
+                <div class="icons">
+                    <div class="plus-icon" onclick="open1('Card 2', 8)">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </div>
+                    <div class="plus-icon">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="images images9 web">
+                <h4>Web 3</h4>
+                <p>WEB</p>
+                <div class="icons">
+                    <div class="plus-icon" onclick="open1('Web 3', 9)">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </div>
+                    <div class="plus-icon">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal">
+            <h1 onclick="close1()">X</h1>
+            <div class="modal-container">
+                <div class="image-container">
+                    <img id="m_img" src="./img/blank.jpg" alt="">
+                </div>
+                <p id="m_p">ABC</p>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

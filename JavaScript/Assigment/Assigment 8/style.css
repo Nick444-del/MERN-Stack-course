@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.main{
+    padding: 60px 0;
+}
+
+.main .title{
+    text-align: center;
+    padding: 30px 0;
+}
+
+.main .title h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #354144;
+    z-index: 2;
+}
+
+.main .title p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main .list ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.main .list ul li{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.main .list ul li:nth-child(1){
+    background-color: #01B1D7;
+    color: white;
+}
+
+.main .gallery{
+    margin: 20px 120px;
+    display: grid;
+    grid-template-columns: 416px 416px 416px;
+    gap: 12px;
+    padding: 0 12px;
+}
+
+.main .gallery .images{
+    padding: 0 12px;
+    margin: 0 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main .gallery .images1{
+    background-image: url(./img/pic1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 312px;
+}
+
+.main .gallery .images2{
+    background-image: url(./img/pic2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 312px;
+}
+
+
+.main .gallery .images3{
+    background-image: url(./img/pic3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 312px;
+}
+
+
+.main .gallery .images4{
+    background-image: url(./img/pic4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 312px;
+}
+
+
+.main .gallery .images5{
+    background-image: url(./img/pic5.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 312px;
+}
+
+
+.main .gallery .images6{
+    background-image: url(./img/pic6.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 312px;
+}
+
+
+.main .gallery .images7{
+    background-image: url(./img/pic7.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 312px;
+}
+
+
+.main .gallery .images8{
+    background-image: url(./img/pic8.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 312px;
+}
+
+
+.main .gallery .images9{
+    background-image: url(./img/pic9.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 312px;
+}
+
+.main .gallery .images{
+    transform: scale(0.95);
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.main .gallery .images:hover{
+    transform: scale(1.1);
+}
+
+.main .gallery .images h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    margin: 0 0 8px;
+    color: white;
+    opacity: 0;
+    transition: all .5s;
+    transform: scale(0);
+}
+
+.main .gallery .images:hover h4{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.main .gallery .images p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: white;
+    margin: 0 0 16px;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.main .gallery .images:hover p{
+    opacity: 1;
+}
+
+.main .gallery .icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.main .gallery .images:hover .icons{
+    opacity: 1;
+}
+
+.main .gallery .icons .plus-icon{
+    background-color: white;
+    columns: #01B1D7;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.main .gallery .icons .plus-icon i{
+    color: #01B1D7;
+}
+
+.main .modal{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgb(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.main .modal h1{
+    position: absolute;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    top: 2%;
+    right: 2%;
+}
+
+.main .modal .modal-container{
+    background-color: white;
+    height: 385px;
+    width: 390px;
+}
+
+.main .modal .modal-container .image-container{
+    width: 100%;
+    height: 295px;
+}
+
+.main .modal .modal-container .image-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.main .modal .modal-container p{
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
