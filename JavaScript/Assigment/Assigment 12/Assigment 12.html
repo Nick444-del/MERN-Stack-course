@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment 12</title>
+</head>
+
+<body>
+    <div id="array"></div>
+    <div id="total"></div>
+
+    <script>
+        var array1 = document.getElementById("array");
+        var total = document.getElementById("total");
+        var arr1 = [];
+        var a = +prompt("Enter a number: ");
+        var sum = 0;
+        while(a > 0){
+            arr1.push(a);
+            a = +prompt("Enter a number: ");
+        }
+        array1.innerHTML = arr1
+        var i = 0;
+        for(i in arr1){
+            if(arr1[i]%5 == 0){
+                sum += 1;
+            }
+        }
+        total.innerHTML = sum;
+    </script>
+</body>
+
+</html>

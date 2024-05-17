@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.box1{
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    margin: 30px;
+    border-radius: 15px;
+}

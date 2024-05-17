@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment 10</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="form" id="form">
+            <h4>Name</h4>
+            <input type="text" name="" oninput="fun1()" id="name1">
+            <h4>Address</h4>
+            <input type="date" name="" oninput="fun1()" id="date1">
+            <h4>Phone number</h4>
+            <input type="number" name="" oninput="fun1()" id="phno">
+            <button onclick="vcard()">Submit</button>
+        </div>
+        <div class="greeting_card" id="greeting_card">
+            <div class="card-container">
+                <div class="firework">
+                    <img src="./img/firework.png" alt="">
+                    <img src="./img/firework.png" alt="">
+                </div>
+                <h1>Happy <br> Birthday</h1>
+                <h2 id="d-name" >Name</h2>
+                <h4 id="d-date">Date</h4>
+                <h5 id="d-phnumber">Phone Number</h5>
+                <div class="image">
+                    <img src="./img/birthday-cake.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
