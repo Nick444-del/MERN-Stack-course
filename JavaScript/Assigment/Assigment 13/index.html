@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment 13</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="container1">
+            <div class="progress-container">
+                <div class="comp">
+                    <div class="info">
+                        <h3>HTML</h3>
+                        <p id="html_p">0%</p>
+                    </div>
+                    <div class="myProgress" id="html_progress">
+                        <div class="myBar" id="html_bar"></div>
+                    </div>
+                </div>
+                <div class="comp">
+                    <div class="info">
+                        <h3>PHP</h3>
+                        <p id="php_p">0%</p>
+                    </div>
+                    <div class="myProgress" id="php_progress">
+                        <div class="myBar" id="php_bar"></div>
+                    </div>
+                </div>
+                <div class="comp">
+                    <div class="info">
+                        <h3>CSS</h3>
+                        <p id="css_p">0%</p>
+                    </div>
+                    <div class="myProgress" id="css_progress">
+                        <div class="myBar" id="css_bar"></div>
+                    </div>
+                </div>
+                <div class="comp">
+                    <div class="info">
+                        <h3>WORDPRESS/CMS</h3>
+                        <p id="wordpress_p">0%</p>
+                    </div>
+                    <div class="myProgress" id="wordpress_progress">
+                        <div class="myBar" id="wordpress_bar"></div>
+                    </div>
+                </div>
+                <div class="comp">
+                    <div class="info">
+                        <h3>JAVASCRIPT</h3>
+                        <p id="javascript_p">0%</p>
+                    </div>
+                    <div class="myProgress" id="javascript_progress">
+                        <div class="myBar" id="javascript_bar"></div>
+                    </div>
+                </div>
+                <div class="comp">
+                    <div class="info">
+                        <h3>PHOTOSHOP</h3>
+                        <p id="photoshop_p">0%</p>
+                    </div>
+                    <div class="myProgress" id="photoshop_progress">
+                        <div class="myBar" id="photoshop_bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container2">
+            <div class="card-container">
+                <div class="card">
+                    <div class="icon-box">
+                        <i class="fa fa-smile-o"></i>
+                    </div>
+                    <h3 id="happy_num">0</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="card">
+                    <div class="icon-box">
+                        <i class="fa fa-briefcase"></i>
+                    </div>
+                    <h3 id="project_num">0</h3>
+                    <p>Projects</p>
+                </div>
+                <div class="card">
+                    <div class="icon-box">
+                        <i class="fa fa-headphones"></i>
+                    </div>
+                    <h3 id="support_num">0</h3>
+                    <p>Hours of Support</p>
+                </div>
+                <div class="card">
+                    <div class="icon-box">
+                        <i class="fa fa-users"></i>
+                    </div>
+                    <h3 id="team_num">0</h3>
+                    <p>Hard Workers</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container3">
+            <div class="title">
+                <div class="t-box">
+                    <p>portfolio</p>
+                </div>
+                <div class="heading">
+                    <h3>Check our <span>Portfolio</span></h3>
+                </div>
+                <p class="p-title">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at
+                    voluptas atque vitae autem.</p>
+            </div>
+            <div class="navs">
+                <ul>
+                    <li onclick="filer_all(this)">ALL</li>
+                    <li onclick="filer_app(this)">APP</li>
+                    <li onclick="filer_card(this)">CARD</li>
+                    <li onclick="filer_web(this)">WEB</li>
+                </ul>
+            </div>
+            <div class="inner-container">
+                <div class="inner-card">
+                    <div class="colums col">
+                        <div class="pcard card1 app">
+                            <div class="box">
+                                <div class="info">
+                                    <h4>App 1</h4>
+                                    <p>App</p>
+                                </div>
+                                <div class="icons">
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-link"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pcard card2 app">
+                            <div class="box">
+                                <div class="info">
+                                    <h4>App 3</h4>
+                                    <p>App</p>
+                                </div>
+                                <div class="icons">
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-link"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colums2 col">
+                        <div class="pcard card3">
+                            <div class="box">
+                                <div class="info">
+                                    <h4>Web 3</h4>
+                                    <p>Web</p>
+                                </div>
+                                <div class="icons">
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-link"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pcard card4">
+                            <div class="box">
+                                <div class="info">
+                                    <h4>Web 3</h4>
+                                    <p>Web</p>
+                                </div>
+                                <div class="icons">
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-link"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pcard card5">
+                            <div class="box">
+                                <div class="info">
+                                    <h4>Web 3</h4>
+                                    <p>Web</p>
+                                </div>
+                                <div class="icons">
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-link"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colums3 col">
+                        <div class="pcard card6 app">
+                            <div class="box">
+                                <div class="info">
+                                    <h4>App 2</h4>
+                                    <p>App</p>
+                                </div>
+                                <div class="icons">
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-link"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pcard card7">
+                            <div class="box">
+                                <div class="info">
+                                    <h4>Card 2</h4>
+                                    <p>Card</p>
+                                </div>
+                                <div class="icons">
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-link"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pcard card8">
+                            <div class="box">
+                                <div class="info">
+                                    <h4>Card 1</h4>
+                                    <p>Card</p>
+                                </div>
+                                <div class="icons">
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-link"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pcard card9">
+                            <div class="box">
+                                <div class="info">
+                                    <h4>Card 1</h4>
+                                    <p>Card</p>
+                                </div>
+                                <div class="icons">
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-link"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container4">
+            <div class="inner-container">
+                <div class="title">
+                    <h2>F.A.Q</h2>
+                    <h3>Frequently Asked <span>Questions</span></h3>
+                    <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas
+                        atque vitae autem.</p>
+                </div>
+                <div class="questions">
+                    <ul>
+                        <li>
+                            <div class="ques" onclick="show_ans('ans1', 'ico')" >
+                                <div class="icon-box"><i class="fa fa-arrow-down" id="ico"></i></div>
+                                <div class="question">
+                                    Non consectetur a erat nam at lectus urna duis?
+                                </div>
+                            </div>
+                            <div>
+                                <p class="ans" id="ans1">Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ques" onclick="show_ans('ans2', 'ico2')">
+                                <div class="icon-box"><i class="fa fa-arrow-down" id="ico2"></i></div>
+                                <div class="question">
+                                    Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? 
+                                </div>
+                            </div>
+                            <div>
+                                <p class="ans" id="ans2">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ques" onclick="show_ans('ans3', 'ico3')">
+                                <div class="icon-box"><i class="fa fa-arrow-down" id="ico3"></i></div>
+                                <div class="question">
+                                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? 
+                                </div>
+                            </div>
+                            <div>
+                                <p class="ans" id="ans3">Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ques" onclick="show_ans('ans4', 'ico4')">
+                                <div class="icon-box"><i class="fa fa-arrow-down" id="ico4"></i></div>
+                                <div class="question">
+                                    Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? 
+                                </div>
+                            </div>
+                            <div>
+                                <p class="ans" id="ans4">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ques" onclick="show_ans('ans5', 'ico5')">
+                                <div class="icon-box"><i class="fa fa-arrow-down" id="ico5"></i></div>
+                                <div class="question">
+                                    Tempus quam pellentesque nec nam aliquam sem et tortor consequat? 
+                                </div>
+                            </div>
+                            <div>
+                                <p class="ans" id="ans5">Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ques question6" onclick="show_ans('ans6', 'ico6')">
+                                <div class="icon-box"><i class="fa fa-arrow-down" id="ico6"></i></div>
+                                <div class="question">
+                                    Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? 
+                                </div>
+                            </div>
+                            <div>
+                                <p class="ans ans6" id="ans6">Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
