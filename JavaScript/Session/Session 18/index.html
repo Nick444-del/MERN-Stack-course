@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 18</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form action="" onsubmit="return validate()">
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email">
+        <p id="err1">Your input field is empty</p>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        <!-- <button onclick="show()" id="btn">Show</button> -->
+        <input type="button" value="Show" id="btn" onclick="show()">
+        <p id="err2">Your password field is empty</p>
+        <p id="err3">Your password is too short</p>
+        <p id="err4">Your password is too long</p>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --accent-color: #47b2e4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.main{
+    padding: 60px 0;
+    /* width: 100vw; */
+    /* height: 100vh; */
+}
+
+.main .title{
+    margin: 0 18.8px;
+    padding: 0 12px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main .title .heading h2{
+    margin: 0 0 20px;
+    padding: 0 0 20px;
+    text-transform: uppercase;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+}
+
+.main .title p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main .container{
+    margin: 0 99.6px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.main .container .left{
+    height: 600px;
+    width: 550px;
+    border-top: 3px solid var(--accent-color);
+    border-bottom: 3px solid var(--accent-color);
+}
+
+.main .container .right{
+    height: 600px;
+    width: 746px;
+    border-top: 3px solid var(--accent-color);
+    border-bottom: 3px solid var(--accent-color);
+}
+
+.main .container .left .container2{
+    padding: 30px;
+}
+
+.main .container .left .container2 ul li .item{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0 40px;
+}
+
+.main .container .left .container2 ul li .item .icon-box{
+    font-size: 20px;
+    width: 44px;
+    height: 44px;
+    margin: 0 15px 0 0;
+    background-color: color-mix(in srgb, var(--accent-color), transparent 92%);
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.main .container .left .container2 ul li .item .contain h3{
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    color: #37517E;
+    margin: 0 0 5px;
+}

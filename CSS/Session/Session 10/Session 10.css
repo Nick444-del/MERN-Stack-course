@@ -79,11 +79,11 @@ nav h2{
 nav ul li{
     display: inline-block;
     margin: 10px 15px;
+    transition: all .2s ease-in-out;
 }
 
 nav ul li a{
     position: relative;
-    transition: .2s ease-in-out;
 }
 
 nav ul li a:hover::after, nav ul li a:hover::before{

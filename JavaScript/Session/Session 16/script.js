@@ -64,12 +64,10 @@
 function dualfun(x,y){
     var a = document.getElementById("num1");
     var b = document.getElementById("num2");
-    
     var m = setInterval(fun1, 10);
     var n = setInterval(fun2, 100);
     var p = 0;
     var q = 0;
-
     function fun1(){
         if(p == x){
             clearInterval(m);
@@ -78,7 +76,6 @@ function dualfun(x,y){
             a.innerHTML = p;
         }
     }
-
     function fun2(){
         if(q == y){
             clearInterval(n);
@@ -88,5 +85,4 @@ function dualfun(x,y){
         }
     }
 }
-
 dualfun(125, 15);

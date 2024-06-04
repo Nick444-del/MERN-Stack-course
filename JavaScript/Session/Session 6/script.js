@@ -94,4 +94,3 @@ var arr3 = ['a', 'b', ['c', 'd', ['h', 'i', ['j']]]];
 console.log(arr3);
 console.log(arr3[2][2][2][0]);
 console.log(arr3[2][0]+ arr3[2][2][1]+ arr3[2][1]);
-

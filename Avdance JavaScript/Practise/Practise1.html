@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise 1</title>
+</head>
+<body>
+    <h1>Hey I am a heading</h1>
+    <button id="demo1">Click me</button>
+
+    <script>
+        const button1 = document.querySelector('#demo1');
+
+        button1.addEventListener('mouseover', () => {
+            document.querySelector('h1').innerText = 'You have hovered on the button';
+        });
+
+        button1.addEventListener('click', () => {
+            document.querySelector('h1').innerText = 'You have clicked the button';
+        });
+    </script>
+</body>
+</html>
