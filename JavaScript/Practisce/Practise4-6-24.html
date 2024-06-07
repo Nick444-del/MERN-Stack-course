@@ -59,9 +59,6 @@
         // function removeDublicates(arr){
         //     let arrRemoved = [];
         //     for(let i = 0; i < arr.length; i++){
-        //         // if(arrRemoved.indexOf(arr[i]) == -1){
-        //         //     arrRemoved.push(arr[i]);
-        //         // }
         //         if(arrRemoved.indexOf(arr[i]) == -1){
         //             arrRemoved.push(arr[i]);
         //         }
@@ -78,6 +75,7 @@
         //     }
         //     return true;
         // }
+
         // console.log(isSorted([1, 2, 3, 4]));
         // console.log(isSorted([1, 3, 2, 4]));
         // Question 7
@@ -87,18 +85,45 @@
         // }
         // console.log(mergeArray([1, 2, 3, 4], [5, 6, 7, 8]));
         // Question 8
-        function secondLargest(arr){
-            let max = 0;
-            let secondMax = 0;
-            for(let i = 0; i < arr.length; i++){
-                if(arr[i] > max){
-                    max = arr[i];
-                    
-                }
-            }
-            
-        }
-        console.log(secondLargest([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+        // function secondLargest(arr){
+        //     if(arr.length < 2){
+        //         return null;
+        //     }
+        //     let max = 0;
+        //     let secondMax = 0;
+        //     for(let i = 0; i < arr.length; i++){
+        //         if(arr[i] > max){
+        //             secondMax = max;
+        //             max = arr[i];
+        //         }else if(arr[i] > secondMax && secondMax != max){
+        //             secondMax = arr[i];
+        //         }
+        //     }
+        //     return secondMax;
+        // }
+        // console.log(secondLargest([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+
+        // Question 9
+        // function squareElement(arr){
+        //     let squareArr = [];
+        //     for(let i = 0; i < arr.length; i++){
+        //         squareArr.push(arr[i]**2);
+        //     }
+        //     return squareArr;
+        // }
+        // console.log(squareElement([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+
+        // Question 10
+        // function findCommonElement(arr1, arr2){
+        //     let commonElementArray = [];
+        //     for(let i = 0; i < arr1.length; i++){
+        //         if(arr1[i] == arr2[i]){
+        //             commonElementArray.push(arr1[i], arr2[i]);
+        //         }
+        //     }
+        //     return commonElementArray;
+        // }
+        // console.log(findCommonElement([1, 2, 3], [2, 3, 4]));
     </script>
 </body>
 
