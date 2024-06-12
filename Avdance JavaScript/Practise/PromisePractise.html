@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+
+<body>
+
+
+    <script>
+        // Question 1
+        // function createResolvedPromise(){
+        //     return new Promise((res, rej) => {
+        //         res("Promise Resolved!");
+        //     });
+        // }
+        // createResolvedPromise().then(result => console.log(result));
+
+        // Question 2
+        // function createRejectedPromise(){
+        //     return new Promise((res, rej) => {
+        //         rej("Promise Rejected!")
+        //     });
+        // }
+        // createRejectedPromise().then(result => console.log(result));
+
+        // Question 3
+        // function delayedPromise(){
+        //     return new Promise((res, rej) => {
+        //         setTimeout((e) => {
+        //             res("Done!")
+        //         }, 2000)
+        //     });
+        // }
+        // delayedPromise().then(result => console.log(result));
+
+        // Question 4
+        // function addTwoNumbers(a, b){
+        //     return new Promise((res, rej) => {
+        //         setTimeout(() => {
+        //             res(a + b);
+        //         },1000)
+        //     });
+        // }
+        // addTwoNumbers(10, 20).then(result => console.log(result));
+
+        // Question 5
+        // function resolveAllPromises(promises){
+        //     return Promise.all(promises);
+        // }
+        // const promises = [Promise.resolve(1), Promise.resolve(2), Promise.resolve(3)];
+        // resolveAllPromises(promises).then(result => console.log(result));
+
+        // Question 6
+        // function racePromises(promises) {
+        //     // Your code here
+        //     return Promise.race(promises);
+        // }
+        // // Example
+        // const promises = [
+        //     new Promise(resolve => setTimeout(() => resolve(1), 300)),
+        //     new Promise(resolve => setTimeout(() => resolve(2), 200)),
+        //     new Promise(resolve => setTimeout(() => resolve(3), 100))
+        // ];
+        // racePromises(promises).then(result => console.log(result)); // Expected output: 3
+
+        // Question 7
+        // function fetchAndProcessData() {
+        //     return new Promise((res, rej) => {
+        //         setTimeout(() => {
+        //             res('Data recieved and processed');
+        //         }, 1000)
+        //     })
+        // }
+        // fetchAndProcessData().then(result => console.log(result));
+
+        // Question 8
+        // function fetchDataWithErrorHandling(){
+        //     return new Promise((res, rej) => {
+        //         rej("Error!");
+        //     });
+        // }
+
+        // fetchDataWithErrorHandling().
+        // then(result => console.log(result)).
+        // catch(error => console.log("Error: ", error));
+
+        // Question 9
+        // async function fetchAndProcessDataAsync() {
+        //     try {
+        //         const result = await new Promise((res, rej) => {
+        //             setTimeout(() => {
+        //                 res("Data received and processed");
+        //             }, 1000);
+        //         });
+        //         return result;
+        //     }catch(err){
+        //         console.log("Error: ", err);
+        //     }
+        // }
+
+        // fetchAndProcessDataAsync().then(result => console.log(result));
+    </script>
+</body>
+
+</html>

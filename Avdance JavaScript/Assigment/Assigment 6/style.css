@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table{
+    border: 1px solid;
+    text-align: center;
+}
+
+th{
+    border: 1px solid;
+    padding: 10px;
+    background-color: rgb(230, 230, 230);
+}
+
+table tr td{
+    border: 1px solid;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+table tr .des{
+    text-align: left;
+    width: 300px;
+}
+
+table tr .tit{
+    text-align: left;
+    width: 200px;
+}
+
+table tr .img{
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    justify-content: center;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+}

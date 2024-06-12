@@ -25,7 +25,7 @@ let dataLoader = () => {
                         p.innerHTML = `<b>${i}</b>: ${e[i]}`;
                     }
                 }
-                let btn1 = document.createElement('button');
+                let btn1 = document.createElement('a');
                 box.appendChild(btn1);
                 btn1.innerHTML = 'Read More';
                 btn1.addEventListener('click', () => {

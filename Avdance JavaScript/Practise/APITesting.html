@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Testing</title>
+</head>
+
+<body>
+    <div class="main"></div>
+
+    <script>
+        let dataLoader = () => {
+            let x = new XMLHttpRequest();
+            x.onload = function () {
+                if (this.status == 200 && this.readyState == 4) {
+                    let a = JSON.parse(this.responseText);
+                    let maintab = document.querySelector('.main');
+                    console.log(a);
+                    for(let i in a){
+                        for(let j in a[i]){
+                            maintab.innerHTML += `<p>${j} : ${a[i][j]}</p>`
+                        }
+                    }
+                }
+            }
+
+            x.open('GET', 'https://dog.ceo/api/breeds/list/all', true);
+            x.send();
+        };
+
+        dataLoader();
+    </script>
+</body>
+
+</html>

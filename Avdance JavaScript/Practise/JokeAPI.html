@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke API</title>
+</head>
+<body>
+    
+
+    <script>
+    const jokeContainer = document.querySelector('#jokeContainer');
+    const jokeBtn = document.querySelector('#jokeBtn');
+    const jokeUrl = "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,political,racist,sexist";
+
+    let getJoke = () => {
+        fetch(jokeUrl).then(data => data.json()).then(item => {
+            jokeContainer.textContent = 
+        })
+    };
+
+    // https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,political,racist,sexist
+    </script>
+</body>
+</html>

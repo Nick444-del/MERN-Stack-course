@@ -24,9 +24,9 @@
 
 
 function fun2(){
-    var text = document.getElementById("demo3");
+    var text = document.getElementById("demo3").value;
     var intro = document.getElementById("demo4");
-    intro.innerText = "My name is "+ text.value;
+    intro.innerText = "My name is "+ text;
     text.value = "";
 }
 

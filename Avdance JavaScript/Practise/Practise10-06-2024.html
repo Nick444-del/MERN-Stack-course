@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise</title>
+</head>
+
+<body>
+
+
+    <script>
+        // function fetchDataPromise(){
+        //     return new Promise((res, rej) => {
+        //         setTimeout((e) => {
+        //             res('Data received');
+        //         }, 1000);
+        //     });
+        // }
+
+        // fetchDataPromise().then(data => console.log(data));
+
+        // Question 3
+        // function fetchDataPromise(){
+        //     return new Promise((res, rej) => {
+        //         setTimeout((e) => {
+        //             res('Data received');
+        //         }, 1000);
+        //     });
+        // }
+
+        // async function fetchAsyncData(){
+        //     try{
+        //         let data = await fetchDataPromise();
+        //         console.log(data);
+        //     }catch(err){
+        //         console.log(error);
+        //     }
+        // }
+
+        // fetchAsyncData();
+
+        // Question 4
+        // function createCounter(){
+        //     let count = 0;
+        //     return function(){
+        //         count += 1;
+        //         return count;
+        //     };
+        // }
+
+        // let counter1 = createCounter();
+        // let counter2 = createCounter();
+        // console.log(counter1());
+        // console.log(counter1());
+        // console.log(counter2());
+        // console.log(counter2());
+
+        // Question 6
+        // function Person(name, age){
+        //     this.name = name;
+        //     this.age = age;
+        // }
+
+        // Person.prototype.describe = function(){
+        //     return `${this.name} is ${this.age} years old`;
+        // }
+
+        // const alice = new Person("Alice", 30);
+        // const bob = new Person("Bob", 35);
+        // console.log(alice.describe());
+        // console.log(bob.describe());
+
+        // Question 7
+        // class Person {
+        //     constructor(name, age) {
+        //         this.name = name;
+        //         this.age = age;
+        //     }
+
+        //     describe() {
+        //         return `${this.name} is ${this.age} years old`;
+        //     }
+        // }
+
+        // const bob = new Person("Bob", 25);
+        // console.log(bob.describe());
+
+        // Question 8
+        // function swap(arr){
+        //     if(arr.length != 2){
+        //         throw new Error("The length of the array is not 2");
+        //     }
+
+        //     let [first, second] = arr;
+        //     return [second, first];
+        // }
+
+        // console.log(swap([1,2]));
+        // console.log(swap(["a","b"]));
+
+        // Question 10
+        // function greet(name, greeting = "Hello"){
+        //     return `${greeting}, ${name}`;
+        // }
+
+        // console.log(greet("Bob"));
+        // console.log(greet("Jhon", "Hi"));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --dark-navy: #26355D;
+    --purple: #AF47D2;
+    --orange: #FF8F00;
+    --yellow: #FFDB00;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.main h1{
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    color: var(--orange);
+    margin: 20px;
+}
+
+.main .container{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.main .container .left{
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+    padding: 0 12px;
+}
+
+.main .container .left ul li{
+    cursor: pointer;
+}
+
+.main .container .right{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 30px;
+    padding: 0 12px;
+    width: 80%;
+    height: 100vh;
+    
+}
+
+.main .container .right .card {
+    width: 450px;
+    height: 500px;
+    border: 1px solid var(--orange);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.main .container .right .card h4{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--dark-navy);
+    margin: 10px 0;
+}
+
+.main .container .right .card .tag{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--purple);
+    margin: 10px 0;
+    background-color: var(--yellow);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.main .container .right .card .desc{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--dark-navy);
+    margin: 10px 0;
+    text-align: left;
+}
+
+.main .container .right .card .btn{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--orange);
+    background-color: var(--dark-navy);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: all .5s;
+}
+
+
+.main .container .right .card img{
+    width: 70%;
+    height: 40%;
+    margin: 10px 0;
+    border-radius: 10px;
+}

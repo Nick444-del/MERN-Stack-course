@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        .main {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                list-style: none;
+                text-decoration: none;
+            }
+
+            .nav {
+                width: 100%;
+                height: 50px;
+                background-color: bisque;
+                /* margin: 20px; */
+                padding: 20px;
+            }
+
+            .nav ul {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+
+            .nav ul li {
+                cursor: pointer;
+                background-color: white;
+            }
+
+            .nav ul li:nth-child(1) {
+                background-color: aquamarine;
+            }
+
+            .para:nth-child(2),
+            .para:nth-child(3) {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="nav">
+            <ul>
+                <li onclick="navs(0)" class="btns" id="home">HOME</li>
+                <li onclick="navs(1)" class="btns" id="profile">PROFILE</li>
+                <li onclick="navs(2)" class="btns" id="contact">CONTACT</li>
+            </ul>
+        </div>
+
+        <div class="para" id="para1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim tempora reiciendis voluptates nihil
+            praesentium dolorem aliquam in voluptatibus voluptas deleniti quia ad a vel numquam, harum eveniet
+            dignissimos quam deserunt quasi corrupti dolores ea et commodi! Reprehenderit tenetur ea, animi molestias
+            ipsa voluptatem possimus tempore facere sapiente sed dignissimos quos, exercitationem culpa. Iste commodi
+            aliquid et quidem pariatur doloremque ea eos ducimus beatae, magnam facilis ipsum incidunt nemo nam ab
+            deleniti. Officiis tempore id iusto, nulla quaerat repellat, aliquid quasi natus fugiat soluta modi sequi.
+            Dolorum quisquam quam explicabo, et qui iste! Totam ea possimus dolorem nihil ipsa tempora sapiente.
+        </div>
+        <div class="para" id="para2">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque hic id, excepturi repellendus ducimus odio
+            ipsa accusantium nam, pariatur beatae reprehenderit voluptatibus numquam voluptatem rerum, dolores corporis
+            quis commodi eius! Qui, veritatis mollitia sapiente amet assumenda ab quibusdam labore culpa porro alias
+            beatae repellat reprehenderit suscipit commodi nihil quas quisquam voluptas! Nemo veritatis fuga quidem
+            fugiat ipsum nostrum excepturi tempora eos ab recusandae at, consequatur, ad, asperiores ex aliquid. Nostrum
+            amet cumque, quisquam corporis repudiandae quaerat, nemo in quod pariatur quos reprehenderit molestiae eos
+            cum maiores rerum quo ullam, eveniet magnam temporibus sed hic! Adipisci rem aut quae unde perspiciatis.
+        </div>
+        <div class="para" id="para3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum est veritatis possimus ipsam sint non nobis
+            qui tenetur aperiam magni, inventore aspernatur nemo ut at veniam nesciunt, omnis natus totam cum
+            recusandae. Eveniet, consectetur vel rem quae quidem doloribus sit sint fuga quis odio. Iusto earum fugit
+            itaque nisi sed sequi alias magnam. Perspiciatis sint delectus eveniet? Possimus voluptatum distinctio
+            laborum itaque architecto corporis illum magnam! Voluptas facilis eum accusantium adipisci voluptatum,
+            obcaecati reprehenderit illo. Eos rem vitae accusamus quas id alias ex corrupti omnis, quo culpa non quia
+            ducimus ullam minus sequi placeat odio incidunt odit exercitationem maxime corporis?
+        </div>
+    </div>
+
+
+    <script>
+        // // Question 1
+        // function factorial(a){
+        //     if(a == 0 || a == 1){
+        //         return 1;
+        //     }else{
+        //         return a * factorial(a - 1);
+        //     }
+        // }
+        // console.log(factorial(4));
+
+        // Question 2
+        // function MakeTen(a, b){
+        //     if(a == 10 || b == 10 || a + b == 10){
+        //         return true;
+        //     }else{
+        //         return false;
+        //     }
+        // }
+        // console.log(MakeTen(2, 8));
+        // console.log(MakeTen(4, 10));
+        // console.log(MakeTen(6, 4));
+        // console.log(MakeTen(4, 4));
+
+        // Question 3
+        // let minMax = (arr) => {
+        //     let min = arr[0];
+        //     let max = 0;
+        //     for(let i = 0; i < arr.length; i++){
+        //         if(arr[i] < min){
+        //             min = arr[i];
+        //         }
+        //         if(arr[i] > max){
+        //             max = arr[i];
+        //         }
+        //     }
+        //     return `Biggest Number = ${max} | Smallest Number = ${min}`;
+        // }
+        // console.log(minMax([1, 2, 3, 4, 5]));
+
+        // // Question 7
+        // function countOccurrence(arr, target){
+        //     let count = 0;
+        //     for(let i = 0; i < arr.length; i++){
+        //         if(arr[i] == target){
+        //             count++;
+        //         }
+        //     }
+        //     return `${target} occurs ${count} times in arr[]`;
+        // }
+        // console.log(countOccurrence([1, 1, 2, 2, 2, 2, 3], 2));
+        // console.log(countOccurrence([1, 1, 2, 2, 2, 2, 3], 3));
+        // console.log(countOccurrence([1, 1, 2, 2, 2, 2, 3], 1));
+
+        // Question 9
+        // const students = [
+        //     { name: 'Alice', score: 75 },
+        //     { name: 'Bob', score: 55 },
+        //     { name: 'Charlie', score: 80 },
+        //     { name: 'David', score: 45 },
+        // ];
+        // let a = students.map((e) => {
+        //     return e.score;
+        // });
+        // let total = a.reduce((tot, curVal) => {
+        //     return tot + curVal;
+        // })
+        // console.log(total);
+
+        // Question 8
+        // push :- This method is used to add an element to the array.
+        // remove :- This method is used to remove an element from the array.
+        // pop :- This method is used to remove the last element from the array.
+        // shift :- This method is used to remove the first element from the array.
+        // unshift :- This method is used to add an element to the beginning of the array.
+
+
+        // Question 5
+        // Click :- This event will trigger a function when you click on an element or a button a block of code will get start to process/execute.
+        // Double click :- This event will trigger when user will double click on the element or a button a block of code will get start to process/execute.
+        // mousedown :-  This event will trigger when user will click on the element and the progress will start when the mouse butten is been clicked and down.
+        // mouseup :- This event will trigger when user will click on the element and it will not run on clicking or holding the element but it will trigger when user will release the mouse button.
+        // mouseover :- This event is like a hover effect it will work then the cursor is on a particular element.
+        // mouseout :- This event will trigger when the mouse is moved out of the perticular element.
+        // mousein :- This event will trigger when the mouse is moved inside the element it's like hover effect/ mouseover event.
+
+        // Question 4
+        // function missingNumber(arr, t){
+        //     let sum = arr.reduce((a, b) => {
+        //         return a + b;
+        //     });
+        //     let missing = t * (arr.length + 1) - sum;
+        //     return missing;
+        // }
+        // console.log(missingNumber([1, 2, 3, 4, 6, 7, 8], 8));
+
+        // Question 10
+
+        let pa1 = document.querySelector('#para1');
+        let pa2 = document.querySelector('#para2');
+        let pa3 = document.querySelector('#para3');
+        function navs(a) {
+            let para = document.querySelectorAll('.para');
+            let btns = document.querySelectorAll('.btns');
+
+            for (let i = 0; i < para.length; i++) {
+                para[i].style.display = 'none';
+            }
+            para[a].style.display = "block";
+            console.log(para[a]);
+            for (let i = 0; i < btns.length; i++) {
+                btns[i].style.backgroundColor = 'white';
+            }
+            btns[a].style.backgroundColor = 'aquamarine';
+        }
+
+    </script>
+</body>
+
+</html>
