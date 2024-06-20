@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --dark: #222831;
+    --charcoal-grey: #393E46;
+    --creulean: #00ADB5;
+    --soft-peach: #EEEEEE;
+    --border-radius: 20px;
+    --glass: linear-gradient(rgba(57, 62, 70, .7) 30%, rgba(57, 62, 72, .7));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.main .form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--creulean);
+    /* opacity: 0.9; */
+    height: 100%;
+    gap: 30px;
+    padding: 30px 20px;
+}
+
+.main .form-container .part {
+    display: flex;
+    width: 1300px;
+    height: 700px;
+    background: var(--glass);
+    box-shadow: 5px 5px 10px #222831, -1px -1px 2px #fff, 1px 1px 2px #555;
+    border-radius: var(--border-radius);
+    align-items: center;
+    overflow: hidden;
+    gap: 20px;
+    transition: transform .25s;
+}
+
+.main .form-container #part1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+}
+
+.main .form-container #part1 .left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--soft-peach);
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .form-container #part1 .left h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: var(--creulean);
+    text-shadow: 1px 1px 1px #222831;
+    text-align: center;
+}
+
+.main .form-container #part1 .left h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--soft-peach);
+    text-shadow: 1px 1px 1px #222831;
+    text-align: center;
+}
+
+.main .form-container #part1 .left .btnSubmit {
+    padding: 10px;
+    border-radius: var(--border-radius);
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: var(--creulean);
+    background-color: var(--soft-peach);
+    transition: all .25s;
+}
+
+.main .form-container #part1 .left .btnSubmit:hover {
+    background-color: var(--creulean);
+    color: var(--soft-peach);
+}
+
+.main .form-container #part1 .left input {
+    width: 100%;
+    padding: 10px;
+    border-radius: var(--border-radius);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: var(--charcoal-grey);
+}
+
+.main .form-container #part1 .left .selectField {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main .form-container #part1 .left .selectField select {
+    padding: 10px;
+    border-radius: var(--border-radius);
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: var(--creulean);
+    background-color: var(--dark);
+}
+
+.main .form-container #part1 .left .selectField .btn {
+    padding: 10px;
+    border-radius: var(--border-radius);
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: var(--creulean);
+    background-color: var(--dark);
+    cursor: pointer;
+    transition: all .25s;
+}
+
+.main .form-container #part1 .left .selectField .btn:hover {
+    background-color: var(--creulean);
+    color: var(--soft-peach);
+}
+
+
+.main .form-container #part1 .line {
+    width: 2px;
+    height: 95%;
+    background-color: var(--creulean);
+}
+
+
+.main .form-container #part1 .right {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .form-container #part1 .right img {
+    width: 100%;
+    height: 100%;
+}
+
+.main .form-container #part2 {
+    /* opacity: 0; */
+    transition: all .5s;
+    /* display: none; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    flex-direction: column;
+}
+
+.main .form-container #part2 .box2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--soft-peach);
+    width: 650px;
+    /* height: 500px; */
+    padding: 20px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.main .form-container #part2 label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--creulean);
+    margin: 0 20px;
+}
+
+.main .form-container #part2 input {
+    padding: 10px;
+    border-radius: var(--border-radius);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: var(--charcoal-grey);
+    width: 250px;
+    margin: 0 20px;
+    width: 400px;
+}
+
+.main .form-container #part2  i{
+    font-size: 30px;
+    color: var(--creulean);
+    cursor: pointer;
+}
+
+.main .form-container #part2 button{
+    padding: 10px;
+    border-radius: var(--border-radius);
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: var(--creulean);
+    background-color: var(--soft-peach);
+    cursor: pointer;
+    transition: all .25s;
+}
+
+.main .form-container #part2 .field_1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main .form-container #part2 .field_1 .checkbox1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 460px;
+}
+
+.main .form-container #part2 .field_1 .checkbox11{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+}
+

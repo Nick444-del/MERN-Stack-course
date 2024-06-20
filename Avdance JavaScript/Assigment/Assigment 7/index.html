@@ -10,14 +10,16 @@
 
 <body>
     <div class="main">
-        <h1>E-commerce Store</h1>
         <div class="container">
-            <div class="left">
-                <ul>
+            <div class="left" id="left">
+                <ul id="left-nav">
                     <li>
                         <h5 onclick="viewProducts()">All Products</h5>
                     </li>
-                    <li></li>
+                    <li id="categoryS">
+                        <input type="text" name="" class="search" id="categorySearch">
+                        <h5 onclick="categorySearch()">Search</h5>
+                    </li>
                     <li></li>
                     <li></li>
                 </ul>
@@ -25,18 +27,18 @@
             <div class="right" id="right">
                 <!-- <div class="card">
                     <h4>Heading</h4>
-                    <p>Content</p>
                     <p class="tag">tag</p>
-                    <img src="./bethany-young-fGvUGWQxbzw-unsplash.jpg" alt="">
-                    <h3 class="price">$100</h3>
+                    <img class="img" src="./bethany-young-fGvUGWQxbzw-unsplash.jpg" alt="">
+                    <p class="price">$100</p>
                     <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur placeat possimus suscipit ducimus praesentium quod nam, dicta itaque voluptatem animi voluptatum, tenetur perspiciatis, dolore explicabo hic architecto. Autem, labore pariatur.</p>
-                    <button class="btn">Add To Cart</button>
+                    <button class="btn1">Add To Cart</button>
                 </div> -->
             </div>
         </div>
     </div>
 
-    <script src="./script.js"></script>
+    <!-- <script src="./script.js"></script> -->
+    <script src="./script2.js"></script>
 </body>
 
 </html>

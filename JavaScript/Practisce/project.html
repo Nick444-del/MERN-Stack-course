@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project snippits</title>
+    <style>
+        .field_1 {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="field_1">
+        <label for=""><input type='text' placeholder="text">:- <button onclick = 'nameIt(this)'>ADD</button></label>
+        <input type="text" placeholder="text">
+        <span onclick="remove1(this)"><i class="fa fa-times"></i></span>
+    </div> -->
+
+    <div class="field_1">
+        <div class="nameing">
+            <input type="text" name="name" id="nameMe" onchange="nameIt(this)">
+        </div>
+        <div class="checkbox1">
+            <button onclick="addCheckbox(this, 'checkbox')">ADD</button>
+            <input type="text" placeholder="Option" class="option_1 option1">
+        </div>
+        <span onclick="remove1(this)"><i class="fa fa-times"></i></span>
+    </div>
+
+    <div class="field_1">
+        <div class="nameing" id="nameing1">
+            <input type="text" name="name" id="nameMe" onchange="nameIt(this)">
+        </div>
+        <div class="checkbox1">
+            <button onclick="addCheckbox(this, 'checkbox')">ADD</button>
+            <input type="text" placeholder="Option" class="option_1 option1">
+        </div>
+        <span onclick="remove1(this)"><i class="fa fa-times"></i></span>
+    </div>
+
+    <script>
+        function nameIt(x) {
+            x.parentNode.innerHTML = x.value+" :-";
+        }
+        function addCheckbox(x, y) {
+            let checkContainer = document.querySelector('.checkbox1');
+            let option = document.querySelector('.option1').value;
+            console.log(option);
+            let code = `<div class="checkbox1">
+                    <label for="male">${option}</label>
+                    <input type='${y}' name="${y}">
+                </div>`
+            checkContainer.innerHTML += code;
+        }
+    </script>
+</body>
+
+</html>

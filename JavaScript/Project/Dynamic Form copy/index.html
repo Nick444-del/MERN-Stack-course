@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="form-container">
+            <div id="part1" class="part">
+                <div class="left">
+                    <h1>Dynamic Form</h1>
+                    <h3>Add Fields</h3>
+                    <!-- <input type="text" name="Label" id="Label"> -->
+                    <div class="selectField">
+                        <select name="type" id="select_1">
+                            <option value="">Select the Type</option>
+                            <option value="text">Text</option>
+                            <option value="number">Number</option>
+                            <option value="email">Email</option>
+                            <option value="radio">Radio</option>
+                            <option value="select">select</option>
+                            <option value="checkbox">checkbox</option>
+                            <option value="submit">submit</option>
+                        </select>
+                        <button class="btn" id="btn1" onclick="add()">Add</button>
+                    </div>
+                    <!-- <button onclick="submit1()" class="btnSubmit">Submit</button> -->
+                </div>
+                <div class="line"></div>
+                <div class="right">
+                    <img src="./img/Fill out-amico.png" alt="">
+                </div>
+            </div>
+            <div id="part2" class="part">
+                <div id="box2" class="box2">
+                </div>
+                <div class="field2" id="field2"></div>
+            </div>
+            <div id="part3" class="part"></div>
+            <div id="part4" class="part"></div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

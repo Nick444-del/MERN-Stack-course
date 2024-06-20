@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="overlay">
+            <!-- First Step Start -->
+            <div class="first_step">
+                <h1>Dynamic Form</h1>
+                <img src="./img/Fill out-amico.png" alt="">
+                <input type="text" name="name" id="form_name" class="formName" onchange="formName()"
+                    placeholder="Form Name">
+                <label for="formFields">Select Fields</label>
+                <div class="selection">
+                    <select name="form" id="formFields" class="formFields">
+                        <option value="Select">Select</option>
+                        <option value="text">Text</option>
+                        <option value="number">Number</option>
+                        <option value="email">Email</option>
+                        <option value="radio">Radio</option>
+                    </select>
+                    <button onclick="add1()" class="add1">Add</button>
+                </div>
+                <button onclick="next1()">Next</button>
+            </div>
+            <!-- First Step End -->
+
+            <!-- Second Step Start -->
+            <div class="second_step" id="secondStep">
+                <h1 id="formName"></h1>
+                <form action="" id="formq">
+                    <!-- <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="html">HTML</label><br>
+                    <input type="radio" id="css" name="fav_language" value="CSS">
+                    <label for="css">CSS</label><br>
+                    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                    <label for="javascript">JavaScript</label> -->
+                </form>
+            </div>
+            <!-- Second Step End -->
+
+            <!-- Third Step Start -->
+            <div class="third_step">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

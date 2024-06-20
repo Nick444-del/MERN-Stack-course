@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&display=swap');
+
+:root{
+    --dark-maganta: #850F8D;
+    --medium-orchid: #C738BD;
+    --lilac: #E49BFF;
+    --citrine-white: #F8F9D7;
+    --b-radius: 20px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--medium-orchid);
+}
+
+.main .container{
+    background-color: var(--dark-maganta);
+    width: 700px;
+    height: 500px;
+    border-radius: var(--b-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.main .container h1{
+    font-family: 'Playwrite PL', sans-serif;
+    font-size: 50px;
+    color: var(--citrine-white);
+    margin-bottom: 20px;
+}
+
+.main .container p{
+    font-family: 'Playwrite PL', sans-serif;
+    font-size: 20px;
+    color: var(--citrine-white);
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.main .container button{
+    font-family: 'Playwrite PL', sans-serif;
+    font-size: 20px;
+    color: var(--medium-orchid);
+    background-color: var(--lilac);
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--b-radius);
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.main .container button:hover{
+    background-color: var(--citrine-white);
+    color: var(--dark-maganta);
+}
