@@ -1,9 +1,6 @@
 function add() {
     let select = document.querySelector('#select_1');
     let selectValue = select.value;
-    let label = document.querySelector('#Label');
-
-
     if (selectValue == '') {
         alert('Please Select the Type');
     } else {
@@ -71,8 +68,6 @@ function addFieldCode(y) {
         <span class='removeIcon' onclick="remove1(this)"><i class="fa fa-times"></i></span>
     </div>`
     }
-
-
     return box2.innerHTML += code;
 }
 

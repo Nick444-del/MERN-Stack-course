@@ -49,7 +49,7 @@
 //             rej(new Error('The number is below 6'))
 //         }
 //     }, 3000);
-// })
+// });
 
 // myPromise3.then((e) => {
 //     console.log(e);

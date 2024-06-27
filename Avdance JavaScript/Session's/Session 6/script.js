@@ -54,7 +54,6 @@ let fun2 = () => {
     
     x.onload = function(){
         if(this.status == 200 && this.readyState == 4){
-            // document.write(JSON.parse(this.responseText));
             let a = JSON.parse(this.responseText);
             let maindata = document.querySelector('#box');
             a.forEach((e) => {
@@ -69,6 +68,7 @@ let fun2 = () => {
                         h1.innerHTML =  `<b>${i}</b> ${e[i]}`;
                     }else if(i == 'title' || i == 'price' || i == 'description'){
                         let p = document.createElement('p');
+                        p.className = 'para';
                         div1.appendChild(p);
                         p.innerHTML = `<b>${i}</b> ${e[i]}`;
                     }else if(i == 'image'){
