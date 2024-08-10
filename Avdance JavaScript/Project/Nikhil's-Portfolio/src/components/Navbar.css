@@ -1,0 +1,21 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background: var(--magenta-affair);
+    color: var(--sizzling-sunrise);
+    padding: 17px 152.8px;
+    height: 65px;
+    width: 100vw;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    width: 30%
+}
+
+nav ul li a{
+    color: var(--sizzling-sunrise);
+}

@@ -1,0 +1,14 @@
+:root{
+  --magenta-affair: #AF47D2;
+  --estate-blue: #26355D;
+  --princeton-orange: #FF8F00;
+  --sizzling-sunrise: #FFDB00;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}

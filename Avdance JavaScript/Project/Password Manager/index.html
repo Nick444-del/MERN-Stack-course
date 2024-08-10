@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/ico.svg" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <div class="logo">Password Manager</div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Password Manager</h1>
+        <p>We're thrilled to have you here. Your password manager, that manages all of your password's</p>
+        <h2>Your Passwords</h2>
+        <table>
+            <tr>
+                <th>Website</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>abc.com</td>
+                <td>abc@google.com</td>
+                <td>abc@123</td>
+                <td></td>
+            </tr>
+        </table>
+        <h2>Add a Password</h2>
+        <form action="/submit" method="post">
+            <label for="website">Website:</label>
+            <input type="text" name="website" id="website" required>
+            <br>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+            <br>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

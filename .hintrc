@@ -16,7 +16,8 @@
       {
         "input-button-name": "off"
       }
-    ]
+    ],
+    "axe/language": "off"
   },
   "browserslist": [
     "defaults",
