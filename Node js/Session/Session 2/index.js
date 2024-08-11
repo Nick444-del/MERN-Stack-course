@@ -23,4 +23,24 @@
 //     res.end();
 // }).listen(8080);
 
-import http from 'http';
+import express from 'express';
+import { contactFn, testFn } from './function';
+
+const app = express();
+const port = 8080;
+
+app.get('/', (req, res) => {
+    res.send('Home page');
+})
+
+const about = (req, res) => {
+    res.send('About page');
+}
+
+app.get('/about', about);
+app.get('/contact', contactFn);
+app.get('/test', testFn);
+
+app.listen(port,() => {
+    console.log('Server listening on port ' + port);
+})
