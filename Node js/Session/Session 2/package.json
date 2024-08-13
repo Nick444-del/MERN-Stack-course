@@ -19,7 +19,9 @@
     "express": "^4.19.2",
     "nodemon": "^3.1.4"
   },
-  "babel":{
-    "presets":["@babel/preset-env"]
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
   }
 }

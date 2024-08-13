@@ -12,3 +12,9 @@
             "presets": ["@babel/preset-env"]
         }
     4. Import packages in index.js as ES6 JavaScript
+
+3. Status Code
+    * 400 Bad Request
+    * 404 Not Found
+    * 200 Connection OK
+    * 500 Internal Server Error

@@ -24,7 +24,7 @@
 // }).listen(8080);
 
 import express from 'express';
-import { contactFn, testFn } from './function';
+// import { contactFn, testFn } from './function';
 
 const app = express();
 const port = 8080;
@@ -38,8 +38,8 @@ const about = (req, res) => {
 }
 
 app.get('/about', about);
-app.get('/contact', contactFn);
-app.get('/test', testFn);
+// app.get('/contact', contactFn);
+// app.get('/test', testFn);
 
 app.listen(port,() => {
     console.log('Server listening on port ' + port);
