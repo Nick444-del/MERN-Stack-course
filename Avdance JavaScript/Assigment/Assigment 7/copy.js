@@ -11,7 +11,6 @@ function fun1(){
             sessionStorage.setItem("data",a)
         }
     }
-
 }
 
 fun1()
