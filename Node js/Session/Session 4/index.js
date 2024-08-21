@@ -1,20 +1,20 @@
 import express from "express";
-import { aboutFn, userFn, addUser, getUser } from "./function";
+import mongoose from "mongoose";
+import userRouter from "./routers/user.router";
 
 const app = express();
-const port = 3000;
 
 app.use(express.json());
+const port = 3001;
 
-app.get('/', (req, res) => {
-    res.send("Hello World");
-})
+app.get("/", (req, res) => {
+    res.send("Home");
+});
 
-app.get('/about', aboutFn);
-app.get('/user', userFn);
-app.post('/adduser', addUser);
-app.get('/user/:id', getUser);
+mongoose.connect("mongodb://127.0.0.1:27017/mydatabase").then(() => console.log("MongoDB Connected"))
 
 app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-})
+    console.log(`App listening at http://localhost:${port}`);
+});
+
+app.use(userRouter);
