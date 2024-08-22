@@ -1,6 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import userRouter from "./routers/user.router";
+import categoryRouter from "./routers/category.router";
 
 const app = express();
 
@@ -18,3 +19,4 @@ app.listen(port, () => {
 });
 
 app.use(userRouter);
+app.use(categoryRouter);
