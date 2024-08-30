@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose, { Schema } from "mongoose";
 import brandModel from "./brand.modal.js";
 import categoryModel from "./categories.modal.js";
 
@@ -19,12 +19,12 @@ const ProductSchema = new schema({
         required: true,
     },
     category: {
-        type: schema.Types.ObjectId,
+        type: Schema.Types.ObjectId,
         required: true,
         ref: categoryModel,
     },
     brand: {
-        type: schema.Types.ObjectId,
+        type: Schema.Types.ObjectId,
         required: true,
         ref: brandModel,
     },
