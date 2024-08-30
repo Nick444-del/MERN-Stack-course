@@ -40,7 +40,6 @@ export const getBrands = async (req, res) => {
 export const getBrand = async (req, res) => {
     try{
         const brandId = req.params.brand_Id;
-
         const brandData = await brandModal.findOne({_id: brandId});
         return res.status(200).json({
             data: brandData,

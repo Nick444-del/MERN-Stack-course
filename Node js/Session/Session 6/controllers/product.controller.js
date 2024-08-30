@@ -45,7 +45,7 @@ export const getProduct = async (req, res) => {
     try{
         const productId = req.params.product_Id;
         
-        const productData = await productModal.findOne({_id: productId});
+        const productData = await productModal.findOne({_id: productId}).populate('category');
         return res.status(200).json({
             data: productData,
             message: "Product retrieved successfully",
