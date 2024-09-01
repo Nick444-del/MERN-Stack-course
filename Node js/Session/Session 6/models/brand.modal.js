@@ -13,4 +13,4 @@ const BrandScema = new schema({
     }
 });
 
-export default mongoose.model('brands', BrandScema);
+export default mongoose.model('brand', BrandScema);
