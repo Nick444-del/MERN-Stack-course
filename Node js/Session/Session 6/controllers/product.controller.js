@@ -13,7 +13,6 @@ const storage = multer.diskStorage({
             cb(null, './uploads');
         }
     },
-
     filename: function (req, file, cb) {
         const orgName = file.originalname;
         const fname = path.parse(orgName).name;
@@ -27,9 +26,8 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 export const createProduct = async (req, res) => {
+    const uploadDataWithFile = upload.fields([{name: 'thumbnail', maxCount: 1}, { name: 'images', maxCount: 8 }]);
     try {
-
-        const uploadDataWithFile = upload.single("thumbnail");
 
         uploadDataWithFile(req, res, async (err) => {
             if (err) {
@@ -44,6 +42,13 @@ export const createProduct = async (req, res) => {
                 img = req.file.filename;
             }
 
+            if(req.files['images']){
+                for(let i = 0; i < req.files['images'].length; i++){
+                    const element = req.files['images'][i];
+                    imgArr.push(element.filename);
+                }
+            }
+
             const { name, price, quantity, category, brand, shortdescription, description } = req.body;
             console.log(req.body);
             const created = await productModal.create({
@@ -53,6 +58,7 @@ export const createProduct = async (req, res) => {
                 category: category,
                 brand: brand,
                 thumbnail: img,
+                images: imgArr,
                 shortdescription: shortdescription,
                 description: description,
             });
@@ -61,7 +67,6 @@ export const createProduct = async (req, res) => {
                 message: "Product created successfully",
                 success: true,
             });
-
         })
     } catch (err) {
         return res.status(500).json({

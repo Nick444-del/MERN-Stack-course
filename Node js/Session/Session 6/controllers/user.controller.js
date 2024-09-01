@@ -70,7 +70,7 @@ export const getUsers = async (req, res) => {
     try {
         const userdata = await userModal.find();
         userdata.map((image) => {
-            if(image.image !== null)
+            if (image.image !== null)
                 image.image = "http://localhost:3000/uploads/" + image.image
         })
         return res.status(200).json({
@@ -92,7 +92,7 @@ export const getUser = async (req, res) => {
         const userId = req.params.user_Id;
 
         const userData = await userModal.findOne({ _id: userId });
-        if(userData.image !== null){
+        if (userData.image !== null) {
             userData.image = "http://localhost:3000/uploads/" + userData.image
         }
         return res.status(200).json({
@@ -111,23 +111,37 @@ export const getUser = async (req, res) => {
 
 export const updateUser = async (req, res) => {
     try {
-        const userId = req.params.user_Id;
 
-        const { name, email, password, contact } = req.body;
+        const uploadDataWithFile = upload.single("profile");
 
-        const updateUserData = await userModal.updateOne({ _id: userId }, { $set: { name: name, email: email, password: password, contact: contact } });
+        uploadDataWithFile(req, res, async (err) => {
+            if (err) return res.status(err).json({ message: err.message, success: false });
+            const userId = req.params.user_Id;
+            const userData = await userModal.findOne({_id: userId});
 
-        if (updateUserData.modifiedCount > 0) {
-            return res.status(200).json({
-                message: 'Updated user successfully',
-                success: true,
+            let img = userData.img;
+            if(req.file){
+                img = req.file.filename;
+                if(fs.existsSync("./uploads/"+ userData.image)){
+                    fs.unlinkSync("./uploads/"+ userData.image);
+                }
+            }
+            const { name, email, password, contact } = req.body;
+            const updateUserData = await userModal.updateOne({ _id: userId }, { $set: { name: name, email: email, password: password, contact: contact, image: img } });
+
+            if (updateUserData.modifiedCount > 0) {
+                return res.status(200).json({
+                    message: 'Updated user successfully',
+                    success: true,
+                })
+            }
+
+            return res.status(400).json({
+                message: 'Something went wrong',
+                success: false,
             })
-        }
-
-        return res.status(400).json({
-            message: 'Something went wrong',
-            success: false,
         })
+
     } catch (err) {
         return res.status(500).json({
             message: err.message,
@@ -139,10 +153,13 @@ export const updateUser = async (req, res) => {
 export const deleteUser = async (req, res) => {
     try {
         const userId = req.params.user_Id;
-
+        const userData = await userModal.findOne({_id: userId});
         const deleteUserData = await userModal.deleteOne({ _id: userId });
 
         if (deleteUserData.deletedCount > 0) {
+            if(fs.existsSync("./uploads/"+ userData.image)){
+                fs.unlinkSync("./uploads/"+ userData.image);
+            }
             return res.status(200).json({
                 message: 'Deleted user successfully',
                 success: true,
