@@ -38,8 +38,9 @@ export const createProduct = async (req, res) => {
             }
 
             let img = null;
-            if (req.file) {
-                img = req.file.filename;
+            let imgArr = [];
+            if (req.files['thumbnail'][0]) {
+                img = req.files['thumbnail'][0].filename;
             }
 
             if(req.files['images']){
@@ -48,9 +49,7 @@ export const createProduct = async (req, res) => {
                     imgArr.push(element.filename);
                 }
             }
-
             const { name, price, quantity, category, brand, shortdescription, description } = req.body;
-            console.log(req.body);
             const created = await productModal.create({
                 name: name,
                 price: price,
@@ -105,6 +104,12 @@ export const getProduct = async (req, res) => {
         console.log(productData);
         if (productData.thumbnail !== null) {
             productData.thumbnail = "http://localhost:3000/uploads/" + productData.thumbnail
+        }
+        // console.log(productData.images);
+        if(productData.images !== null){
+            for(let i = 0; i < productData.images.length; i++){
+                productData.images[i] = "http://localhost:3000/uploads/" + productData.images[i]
+            }
         }
         return res.status(200).json({
             data: productData,
