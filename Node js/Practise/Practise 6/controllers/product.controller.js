@@ -65,7 +65,7 @@ export const getProducts = async (req, res) => {
         let filter = {};
         if(search){
             const rex = (pattern) => new RegExp(`.*${pattern}.*`);
-            const searchRgx = rgx(search);
+            const searchRgx = rex(search);
             filter = {
                 $or: [
                     { title: { $regex: searchRgx, $options: "i" } },
@@ -122,13 +122,12 @@ export const deleteProduct = async (req, res) => {
         if(fs.existsSync(`./uploads/${thumbnail}`)){
             fs.unlinkSync(`./uploads/${thumbnail}`);
         }
-
-        let removeImg = null;
+        
         for(let i = 0; i < images.length; i++){
-            removeImg = images.pop();
-            if(fs.existsSync(`./uploads/${removeImg}`)){
-                fs.unlinkSync(`./uploads/${removeImg}`);
-                console.log(`Image Removed ${removeImg}`);
+            
+            if(fs.existsSync(`./uploads/${images[i]}`)){
+                fs.unlinkSync(`./uploads/${images[i]}`);
+                console.log(`Image Removed ${images[i]}`);
             }
         }
         // console.log(removeImg);
@@ -213,13 +212,7 @@ export const getProductAggr = async (req, res) => {
                     localField: "categories",
                     foreignField: "_id",
                     as: "categories"
-                },
-                $lookup: {
-                    from: "brand",
-                    localField: "brand",
-                    foreignField: "_id",
-                    as: "brand"
-                },
+                }
             },
             {
                 $unwind: "$categories",
@@ -227,6 +220,21 @@ export const getProductAggr = async (req, res) => {
             {
                 $sort: { "_id": -1 }
             },
+        ],[
+            {
+                $lookup: {
+                    from : "brand",
+                    localField: "brand",
+                    foreignField: "_id",
+                    as: "brand"
+                }
+            },
+            {
+                $unwind: "$brand",
+            },
+            {
+                $sort: { "_id": -1 }
+            }
         ])
 
         return res.status(200).json({

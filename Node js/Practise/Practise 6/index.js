@@ -3,7 +3,7 @@ dotenv.config();
 import express from "express";
 import mongoose from "mongoose";
 
-import { userRouter, categoriesRouter, brandRouter, productRouter } from './router/exports';
+import { userRouter, categoriesRouter, brandRouter, productRouter, cartRouter } from './router/exports';
 
 
 const app = express();
@@ -22,3 +22,4 @@ app.use(userRouter);
 app.use(categoriesRouter);
 app.use(brandRouter);
 app.use(productRouter);
+app.use(cartRouter);

@@ -156,7 +156,7 @@ export const getUser = async(req, res) => {
 
 export const forgetPassword = async(req, res) => {
     try{
-        const userEmail = req.params.query;
+        const userEmail = req.params;
 
         const userData = await userModel.findOne({email: userEmail});
 
@@ -167,7 +167,7 @@ export const forgetPassword = async(req, res) => {
             })
 
             return res.status(200).json({
-                data: userData,
+                data: changePassword,
                 message: "Password changed",
                 success: true,
             })
@@ -184,3 +184,4 @@ export const forgetPassword = async(req, res) => {
         })
     }
 }
+

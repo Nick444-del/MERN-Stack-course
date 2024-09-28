@@ -23,6 +23,10 @@ const userSchema = new Schema({
         type: String,
         default: null
     },
+    isAdmin: {
+        type: Boolean,
+        default: false
+    },
     status: {
         type: Number,
         default: 1
