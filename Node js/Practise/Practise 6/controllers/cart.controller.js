@@ -11,7 +11,6 @@ export const addToCart = async (req, res) => {
         console.log(product);
         console.log(userData);
 
-        
     }catch(err){
         return res.status(500).json({
             message: err.message,

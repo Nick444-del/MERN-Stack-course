@@ -1,16 +1,20 @@
 import express from "express";
+import mysql from "mysql2";
+import dotenv from "dotenv";
+import todosPool from "./config/db.config";
+dotenv.config();
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
+
+todosPool.query("SELECT * FROM todos", (err, results) => {
+    if (err) {
+        console.log(err);
+    } else {
+        console.log(results);
+    }
+})
 
 app.get("/", (req, res) => {
     res.send("Hello World!");
-});
-
-app.get("/about", (req, res) => {
-    res.send(`Hey ${req.query.name}`);
-});
-
-app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`);
-});
+})

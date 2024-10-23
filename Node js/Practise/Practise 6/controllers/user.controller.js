@@ -49,8 +49,6 @@ export const signUp = async (req, res) => {
                 return res.status(400).json({ message: "User Already Exist", success: false });
             }
             const hashPassword = bcrypt.hashSync(password, 12);
-
-
             if (err) {
                 return res.status(400).json({ message: err.message, success: false });
             }
