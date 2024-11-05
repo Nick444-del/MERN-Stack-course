@@ -5,6 +5,7 @@ import dotenv from "dotenv";
 import categoriesRouter from "./routers/categories.router.js";
 import productRouter from "./routers/product.router.js";
 import userRouter from "./routers/user.router.js";
+import cartRouter from "./routers/cart.router.js";
 
 dotenv.config();
 
@@ -28,3 +29,4 @@ mongoose.connect(process.env.MONGODB_URL).then(() => {
 app.use(categoriesRouter);
 app.use(productRouter);
 app.use(userRouter);
+app.use(cartRouter);

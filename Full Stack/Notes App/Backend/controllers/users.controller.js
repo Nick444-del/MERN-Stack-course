@@ -1,7 +1,6 @@
 import jwt from "jsonwebtoken";
 
 import usersModel from "../models/users.model";
-import { auth } from "../middleware/tokens"
 
 export const getUsers = async (req, res) => {
     try {
@@ -21,7 +20,7 @@ export const getUsers = async (req, res) => {
 
 export const createUser = async (req, res) => {
     try {
-        const { fullName, email, password } = req.body;
+        const { fullName, email, password, userId } = req.body;
         const newUser = await usersModel.create({
             fullName: fullName,
             email: email,
@@ -54,7 +53,7 @@ export const login = async (req, res) => {
 
         const token = jwt.sign({
             data: {id: existUser._id}
-        }, process.env.ACCESS_SECRET_KEY, {expiresIn: "1h"})
+        }, process.env.ACCESS_TOKEN_SECRET, {expiresIn: "36000m"})
 
         const userData = await usersModel.findOne({email: email});
 
@@ -91,8 +90,15 @@ export const register =  async (req, res) => {
             password: password
         })
 
+        const accessTocken = jwt.sign({
+            userData
+        }, process.env.ACCESS_TOKEN_SECRET, {
+            expiresIn: "30m"
+        })
+
         return res.status(201).json({
             data: userData,
+            accessTocken,
             message: "User created successfully",
             success: true
         })
@@ -118,6 +124,23 @@ export const getUser = async (req, res) => {
     }catch(err){
         return res.status(500).json({
             message: err.message,
+            success: false
+        })
+    }
+}
+
+export const deleteUser = async (req, res) => {
+    try {
+        const {id} = req.params;
+        const data = await usersModel.deleteOne({_id: id});
+        return res.status(200).json({
+            data: data,
+            message: "User deleted successfully",
+            success: true
+        })
+    } catch (error) {
+        return res.status(500).json({
+            message: error.message,
             success: false
         })
     }

@@ -10,11 +10,9 @@ const NoteCard = ({title, date, content, tags, isPinned, onEdit, onDelete, onPin
                     <h6 className='text-sm font-medium'>{title}</h6>
                     <span className='text-xs text-vista_blue'>{date}</span>
                 </div>
-
                 <MdOutlinePushPin className={`icon-btn ${isPinned ? 'text-leather' : 'text-light_tan'}`} onClick={onPinNote} />
             </div>
             <p className='text-xs text-leather mt-2'>{content?.slice(0, 60)}</p>
-
             <div className='flex items-center gap-2 justify-between'>
                 <div className='text-xs text-light_tan'>{tags}</div>
                 <div className='flex items-center gap-2'>

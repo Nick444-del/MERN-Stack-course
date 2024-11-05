@@ -12,8 +12,12 @@ const noteSchema = new schema({
         required: true
     },
     tags: {
-        type: [],
-        required: true
+        type: [String],
+        default: []
+    },
+    isPinned: {
+        type: Boolean,
+        default: false
     },
     userId: {
         type: mongoose.Schema.Types.ObjectId,

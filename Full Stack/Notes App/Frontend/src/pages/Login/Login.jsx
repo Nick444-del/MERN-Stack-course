@@ -3,6 +3,7 @@ import Navbar from '../../components/Navbar/Navbar'
 import { Link } from 'react-router-dom'
 import PasswordInput from '../../components/Input/PasswordInput'
 import { validateEmail } from '../../utils/helper'
+import axios from 'axios'
 
 const Login = () => {
     const [email, setEmail] = useState("");
@@ -25,6 +26,14 @@ const Login = () => {
         setError("");
 
         // Login API Call
+
+        try {
+            
+        } catch (error) {
+            
+        }
+
+        // Redirect to Home
     }
 
     return (
