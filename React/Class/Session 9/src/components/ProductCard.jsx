@@ -22,9 +22,9 @@ const ProductCard = () => {
     }
 
     function getProductData() {
-        axios.get('https://dummyjson.com/products').then(res => {
+        axios.get('https://dummyjson.com/products?limit=0').then(res => {
             setProducts(res.data.products)
-            console.log(products);
+            console.log(res.data.products);
         }).catch(err => console.log(err));
     }
 

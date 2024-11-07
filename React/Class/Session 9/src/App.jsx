@@ -5,6 +5,7 @@ import Home from './components/Pages/Home';
 import Product from './components/Pages/Product';
 import Contact from './components/Pages/Contact';
 import ProductDetails from './components/Pages/ProductDetails';
+import About from './components/Pages/About';
 
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -16,6 +17,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
         <Route path='/product' element={<Product />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/product/:id' element={<ProductDetails />} />

@@ -1,13 +1,7 @@
 import { useEffect, useState } from 'react';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 import { NavLink } from 'react-router-dom';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button'
 import axios from 'axios';
+import { Container, Nav, Navbar, Form, Row, Col, Button } from 'react-bootstrap'
 
 function BasicExample() {
     const [data, setData] = useState([]);
@@ -17,23 +11,24 @@ function BasicExample() {
         setValue(data);
     }
 
-    const apiData = async () => {
-        const res = await axios.get(`https://dummyjson.com/products/search?q=${value}`);
-        setData(res.data.products);
-    }
+    // const apiData = async () => {
+    //     const res = await axios.get(`https://dummyjson.com/products/search?q=${value}`);
+    //     setData(res.data.products);
+    // }
 
-    useEffect(() => {
-        apiData()
-    }, [value])
+    // useEffect(() => {
+    //     apiData()
+    // }, [value])
 
     return (
-        <Navbar expand="lg" className="bg-body-tertiary">
+        <Navbar expand="lg" className="bg-[#1B9C85] text-white">
             <Container>
                 <Navbar.Brand href="#home">E-Store</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <NavLink className="nav-link" to="/">Home</NavLink>
+                        <NavLink className="nav-link" to="/about">About</NavLink>
                         <NavLink className="nav-link" to="/product">Product</NavLink>
                         <NavLink className="nav-link" to="/contact">Contact</NavLink>
                     </Nav>
@@ -49,7 +44,7 @@ function BasicExample() {
                             />
                         </Col>
                         <Col xs="auto">
-                            <Button type="submit" onClick={getValue}>Submit</Button>
+                            <Button type="submit" className='bg-[#851b9c]' onClick={getValue}>Submit</Button>
                         </Col>
                     </Row>
                 </Form>

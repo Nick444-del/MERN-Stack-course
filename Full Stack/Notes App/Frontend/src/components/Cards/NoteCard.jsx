@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState ,useEffect } from 'react'
 import {MdOutlinePushPin} from "react-icons/md";
 import { MdCreate, MdDelete } from "react-icons/md";
+import axios from 'axios';
 
 const NoteCard = ({title, date, content, tags, isPinned, onEdit, onDelete, onPinNote}) => {
+
     return (
         <div className='border rounded p-4 bg-white hover:shadow-xl transition-all ease-in-out'>
             <div className='flex items-center justify-between'>

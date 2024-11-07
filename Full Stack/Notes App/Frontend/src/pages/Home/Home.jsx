@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { MdAdd } from 'react-icons/md'
 import Modal from 'react-modal'
 import Navbar from '../../components/Navbar/Navbar'
 import NoteCard from '../../components/Cards/NoteCard'
-
+import axiosInstance from '../../utils/axiosInstance'
 import AddEditNotes from './AddEditNotes'
 
 const Home = () => {

@@ -1,40 +1,59 @@
 import { useState, React } from 'react'
 import Navbar from '../../components/Navbar/Navbar'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import PasswordInput from '../../components/Input/PasswordInput'
 import { validateEmail } from '../../utils/helper'
-import axios from 'axios'
+import axiosInstance from '../../utils/axiosInstance'
 
 const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState(null);
 
-    const handleLogin = (e) => {
-        e.preventDefault();
+    const navigate = useNavigate()
 
-        if(!validateEmail(email)){
+    const handleLogin = async (e) => {
+        e.preventDefault();
+        console.log("Login function triggered");
+
+        if (!validateEmail(email)) {
             setError("Please enter a valid email address");
+            console.log("Invalid email format");
             return;
         }
 
-        if(!password){
+        if (!password) {
             setError("Please enter your password");
+            console.log("Password is empty");
             return;
         }
 
         setError("");
 
-        // Login API Call
-
         try {
-            
-        } catch (error) {
-            
-        }
+            console.log("Attempting login with payload:", { email, password });
+            const response = await axiosInstance.post("/login", { email, password });
+            console.log("Login response:", response);
 
-        // Redirect to Home
-    }
+            if (response.data && response.data.accessToken) {
+                console.log("Access token received:", response.data.accessToken);
+                localStorage.setItem("token", response.data.accessToken);
+                console.log("Token saved in localStorage");
+                navigate("/dashboard");
+                console.log("Navigating to dashboard");
+            } else {
+                console.log("Access token missing in response data");
+            }
+        } catch (error) {
+            console.error("Login error:", error);
+            if (error.response && error.response.data && error.response.data.message) {
+                setError(error.response.data.message);
+            } else {
+                setError("An unexpected error occurred. Please try again");
+            }
+        }
+    };
+
 
     return (
         <>
@@ -45,12 +64,12 @@ const Login = () => {
                     <form onSubmit={handleLogin}>
                         <h4 className='text-2xl mb-7'>Login</h4>
 
-                        <input type="text" name="email" id="email" placeholder='Email' className='input-box' value={email} onChange={(e) => setEmail(e.target.value)}/>
+                        <input type="text" name="email" id="email" placeholder='Email' className='input-box' value={email} onChange={(e) => setEmail(e.target.value)} />
 
-                        <PasswordInput value={password} onChange={(e) => setPassword(e.target.value)}/>
+                        <PasswordInput value={password} onChange={(e) => setPassword(e.target.value)} />
 
                         {error && <p className='text-red-600 text-xs pb-1'>{error}</p>}
-                        
+
                         <button type='submit' className=' btn-primary'>
                             Login
                         </button>

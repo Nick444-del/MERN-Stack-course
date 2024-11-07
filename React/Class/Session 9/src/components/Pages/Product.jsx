@@ -3,7 +3,10 @@ import ProductCard from '../ProductCard'
 const Product = () => {
     return (
         <>
-            <ProductCard />
+            <div className='bg-lightweight'>
+                {/* <ProductsFilters /> */}
+                <ProductCard />
+            </div>
         </>
     )
 }
