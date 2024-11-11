@@ -222,3 +222,18 @@ export const updatePlayer = (req, res) => {
         });
     });
 };
+
+export const getPlayerWithAllData = async (req, res) => {
+    connection.query(`SELECT * FROM player_basic 
+        INNER JOIN player_raids ON player_basic.id = player_raids.player_id 
+        INNER JOIN player_role ON player_basic.position = player_role.id
+        INNER JOIN overall_played ON player_basic.id = overall_played.player_id
+        INNER JOIN player_tackle ON player_basic.id = player_tackle.player_id`, (err, rows) => {
+        if(err) return res.status(500).json({ error: err.message });
+        return res.status(200).json({
+            data: rows,
+            success: true,
+            message: "Success"
+        })
+    })
+}

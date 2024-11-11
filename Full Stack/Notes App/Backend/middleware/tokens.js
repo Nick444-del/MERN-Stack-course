@@ -6,8 +6,8 @@ export const auth = async (req, res, next) => {
     try{
         if(req.headers.authorization){
             token = req.headers.authorization;
-            let decoded = jwt.verify(token, process.env.JWT_SECURITY_KEY)
-
+            let decoded = jwt.verify(token, process.env.ACCESS_TOKEN_SECRET)
+            console.log(token);
             if(decoded){
                 const user = await userModel.filter({_id: decode.id}).select('-password');
                 req.user = user;
@@ -48,13 +48,21 @@ export const admin = async (req, res, next) => {
 export const authenticateToken = (req, res, next) => {
     const authHeader = req.headers['authorization'];
     const token = authHeader && authHeader.split(" ")[1];
+    console.log(token)
     if(!token){
-        return res.sendStatus(401);
+        return res.status(401).json({
+            message: "Access token missing",
+            success: false
+        });
     }
-
-    jwt.verify(token, process.env.JWT_SECURITY_KEY, (err, user) => {
-        if(err) return res.sendStatus(401);
+    jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, user) => {
+        console.log("Verify token " + JSON.stringify(user));
+        if(err) return res.json({
+            message: err.name === "TokenExpiredError" ? "Access token expired" : "Invalid access token",
+            success: false
+        });
         req.user = user;
+        console.log("Now going to next step...");
         next();
     })
-} 
+}

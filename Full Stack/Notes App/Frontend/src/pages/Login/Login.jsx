@@ -21,23 +21,20 @@ const Login = () => {
             console.log("Invalid email format");
             return;
         }
-
         if (!password) {
             setError("Please enter your password");
             console.log("Password is empty");
             return;
         }
-
         setError("");
-
         try {
             console.log("Attempting login with payload:", { email, password });
             const response = await axiosInstance.post("/login", { email, password });
             console.log("Login response:", response);
-
-            if (response.data && response.data.accessToken) {
-                console.log("Access token received:", response.data.accessToken);
-                localStorage.setItem("token", response.data.accessToken);
+            localStorage.setItem("User", JSON.stringify(response.user));
+            if (response.data && response.data.token) {
+                console.log("Access token received:", response.data.token);
+                localStorage.setItem("token", response.data.token);
                 console.log("Token saved in localStorage");
                 navigate("/dashboard");
                 console.log("Navigating to dashboard");
