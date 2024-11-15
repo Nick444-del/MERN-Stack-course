@@ -151,7 +151,6 @@ export const getPlayer = (req, res) => {
 
 export const updatePlayer = (req, res) => {
     const { id } = req.params;
-
     connection.query('SELECT * FROM player_basic WHERE id = ?', [id], (err, rows) => {
         if (err) {
             return res.status(500).json({
@@ -165,20 +164,16 @@ export const updatePlayer = (req, res) => {
                 message: "Player not found"
             });
         }
-
         const updateImageWithData = upload.files([
             { name: "player_icon_image", maxCount: 1 },
             { name: "player_hero_image", maxCount: 1 },
             { name: "player_full_image", maxCount: 1 }
         ]);
-
         updateImageWithData(req, res, async (err) => {
             if (err) return res.status(400).json({ success: false, message: err.message });
-
             let player_icon_image = rows[0].player_icon_image;
             let player_hero_image = rows[0].player_hero_image;
             let player_full_image = rows[0].player_full_image;
-
             if (req.files && req.files["player_icon_image"]) {
                 fs.unlink(`./uploads/${player_icon_image}`, (err) => {
                     if (err) console.log(`Failed to delete player_icon_image: ${err.message}`);
@@ -197,9 +192,7 @@ export const updatePlayer = (req, res) => {
                 });
                 player_full_image = req.files["player_full_image"][0].filename;
             }
-
             const { jersey_no, position, player_name, player_dob, player_nationality } = req.body;
-
             connection.query(
                 `UPDATE player_basic SET jersey_no = ?, position = ?, player_name = ?, player_dob = ?, player_nationality = ?, player_icon_image = ?, player_hero_image = ?, player_full_image = ? WHERE id = ?`,
                 [jersey_no, position, player_name, player_dob, player_nationality, player_icon_image, player_hero_image, player_full_image, id],
@@ -210,7 +203,6 @@ export const updatePlayer = (req, res) => {
                             message: err.message
                         });
                     }
-
                     // Optionally, perform a SELECT query to return the updated data if needed
                     return res.status(200).json({
                         success: true,

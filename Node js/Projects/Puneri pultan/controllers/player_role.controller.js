@@ -2,7 +2,7 @@ import connection from "../config/dbconfig.js";
 
 export const getPlayerRole = async (req, res) => {
     connection.query('SELECT * FROM player_role', (err, rows) => {
-        if(err) throw err;
+        if (err) throw err;
         return res.status(200).json({
             data: rows,
             success: true,
@@ -12,46 +12,59 @@ export const getPlayerRole = async (req, res) => {
 }
 
 export const createPlayerRole = async (req, res) => {
-    const { player_role } = req.body
-    console.log(player_role);
-    connection.query(`INSERT INTO player_role(player_role) VALUES (?)`,[player_role], (err, rows) => {
-        if (err){
+    const { player_role } = req.body;
+    if (!player_role) {
+        return res.status(400).json({
+            success: false,
+            message: "Player role is required"
+        });
+    }
+    connection.query('SELECT * FROM player_role WHERE player_role = ?', [player_role], (err, result) => {
+        if (err) {
             return res.status(500).json({
                 success: false,
                 message: err.message
-            })
+            });
         }
-        try{
+        if (result.length > 0) {
+            return res.status(400).json({
+                success: false,
+                message: "Data already exists"
+            });
+        }
+        connection.query('INSERT INTO player_role(player_role) VALUES (?)', [player_role], (err, rows) => {
+            if (err) {
+                return res.status(500).json({
+                    success: false,
+                    message: err.message
+                });
+            }
             return res.status(200).json({
                 data: rows,
                 success: true,
                 message: "Success"
-            })
-        }catch(err){
-            return res.status(500).json({
-                success: false,
-                message: err.message
-            })
-        }
-    })
-}
+            });
+        });
+    });
+};
+
 
 export const deletePlayerRole = async (req, res) => {
     const { id } = req.params;
     connection.query(`DELETE FROM player_role WHERE id = (?)`, [id], (err, rows) => {
-        if(err){
+        if (err) {
             return res.status(500).json({
                 success: false,
                 message: err.message
             })
         }
-        try{
+        try {
             return res.status(200).json({
                 data: rows,
                 success: true,
                 message: "Data deleted successfully"
             })
-        }catch(err){
+        } catch (err) {
             return res.status(500).json({
                 success: false,
                 message: err.message
@@ -63,7 +76,7 @@ export const deletePlayerRole = async (req, res) => {
 export const getPlayerRoleById = async (req, res) => {
     const { id } = req.params;
     connection.query(`SELECT * FROM player_role WHERE id = (?)`, [id], (err, rows) => {
-        if(err){
+        if (err) {
             return res.status(500).json({
                 success: false,
                 message: err.message
@@ -73,7 +86,7 @@ export const getPlayerRoleById = async (req, res) => {
             return res.status(200).json({
                 data: rows,
                 success: true,
-                message: "Success"
+                message: "Player role fetched successfully"
             })
         } catch (error) {
             return res.status(500).json({
@@ -88,7 +101,7 @@ export const updatePlayerRole = async (req, res) => {
     const { id } = req.params;
     const { player_role } = req.body;
     connection.query(`UPDATE player_role SET player_role = (?) WHERE id = (?)`, [player_role, id], (err, rows) => {
-        if(err){
+        if (err) {
             return res.status(500).json({
                 success: false,
                 message: err.message
